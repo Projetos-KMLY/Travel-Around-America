@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(180deg, #008498, #3EB3C7, #FFF);
   }
+
+
   
   .btn-login {
     font-size: 0.9rem;
@@ -24,7 +26,7 @@ body {
     height: 2.4rem;
   }
 
-  .card-body {
-      border-radius: 2.5rem;
+  .card {
+      border-radius: 1.3rem!important;
   }
   
