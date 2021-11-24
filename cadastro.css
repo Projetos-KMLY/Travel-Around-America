@@ -1,32 +1,57 @@
 body {
     background: linear-gradient(180deg, #008498, #3EB3C7, #FFF);
-  }
+}
 
 
-  
-  .btn-login {
+
+.btn-login {
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
-  }
-  
-  .btn-google {
+}
+
+.btn-google {
     color: white !important;
     background-color: #ea4335;
-  }
-  
-  .btn-facebook {
+}
+
+.btn-facebook {
     color: white !important;
     background-color: #3b5998;
-  }
+}
 
-  .logo img {
-    width: 10rem;
+.logo img {
+    width: 13rem;
     float: right;
     height: 2.4rem;
-  }
+}
 
-  .card {
-      border-radius: 1.3rem!important;
-  }
-  
+.mulher {
+    flex: 1 1 16rem;
+}
+
+.mulher img {
+    width: 40rem;
+}
+
+.card {
+    border-radius: 1.3rem !important;
+    width: 25rem;
+    margin-bottom: 100rem! important;
+}
+
+.container {
+    display: inline-flex;
+    float: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+/* BOTÃO */
+
+.d-grid {
+    padding-top: 1rem;
+    padding-left: 5.5rem;
+}
