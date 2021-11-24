@@ -9,6 +9,29 @@
 body {
     background: linear-gradient(180deg, #008498, #3EB3C7, #FFF);
 }
+
+.logo {
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border-radius: 1.3rem!important;
+    width: 25rem;
+}
+
+.login {
+    width: 30rem;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
     
     .btn-login {
         font-size: 0.9rem;
