@@ -23,4 +23,8 @@ body {
     float: right;
     height: 2.4rem;
   }
+
+  .card-body {
+      border-radius: 2.5rem;
+  }
   
