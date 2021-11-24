@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -473,42 +473,6 @@ nav .icon-menu:hover {
     order: 0;
     max-width: 24rem;
     text-align: left;
-  }
-
-  /* INICIO - 1 */
-
-  .ini-1 .banner-ini-1 .text-ini-1 {
-    text-align: left;
-    margin-left: 8.5rem;
-    padding: 0%;
-  }
-
-  /* INICIO - 2 */
-
-  .ini-2 .sobre_nos .text-ini-2 {
-    text-align: left;
-    width: 75%;
-  }
-
-  .ini-2 .sobre_nos .logo_wsa img {
-    width: 55%;
-  }
-
-  /* por que comprar */
-
-  .motivos-comprar .mulher-perg {
-    text-align: left;
-    width: 40%;
-  }
-
-  .motivos-comprar .mulher-perg img {
-    margin-top: 2.9rem;
-    margin-bottom: 2.9rem;
-
-    width: 100%;
-  }
-  .motivos-comprar .block-motivos {
-    width: 60%;
   }
 }
 @media (min-width: 992px) {
