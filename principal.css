@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*======= VARIABLES =======*/
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  /* HSL color mode */
+  --base-color: #1195a8;
+  --base-color-second: #0c7c8d;
+  --color-elements: #fcf9c1;
+  --color-details: #c1fcdb;
+  --clean: #ffffff;
+  --title-color: #103d50;
+  --text-color: #384b53;
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --font: 'Poppins', sans-serif;
+  --logo-font: 'Poppins', sans-serif;
+}
+
+/*======= BASE =======*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem var(--font);
+  color: var(--text-color);
+  background: linear-gradient(180deg, #008498, #03aac4);
+  -webkit-font-smoothing: antialiased;
+}
+g .title {
+  font: 500 var(--font);
+  color: var(--clean);
+  -webkit-font-smoothing: auto;
+}
+
+/*======= LAYOUT =======*/
+
+#header {
+  border-bottom: 1px solid #0d8ea1;
+  margin-bottom: 2rem;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--base-color);
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+}
+
+/*======= LOGO =======*/
+
+nav .logo img {
+  width: 10rem;
+  float: left;
+  height: 2.4rem;
+  margin-left: -4rem;
+}
+
+/*======= NAVEGAÇÂO =======*/
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+nav .menu-lateral {
+  height: 35%;
+  width: 2rem;
+  position: absolute;
+  left: 5%;
+}
+
+/*======= PRINCIPAL =======*/
+
+.princ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.princ .mapa {
+  flex: 1 1 16rem;
+  padding: 0px 20px;
+  text-align: right;
+  width: 90%;
+  height: 82vh;
+}
+.princ .mapa img {
+  width: 120%;
+  margin-left: -2rem;
+}
+.princ .filtro {
+  flex: 1 1 16rem;
+  padding: 0px 20px;
+  text-align: center;
+  width: 50%;
+  height: 82vh;
+}
+.princ .filtro .filt {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5rem;
+}
+
+.princ h1 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: var(--color-elements);
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  transition: background 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: var(--subtitle-font-size);
+  justify-content: center;
+}
+
+.button:hover {
+  background: var(--clean);
+  color: black;
+}
+
+.princ .filtro a {
+  height: 3.4rem;
+  width: 60%;
+  margin: 1rem;
+  text-align: center;
+}
+
+/*======= FOOTER =======*/
+.footer {
+  display: block;
+  color: var(--title-color);
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.footer p {
+  text-align: center;
+  color: #ffffffa1;
+
+  font-size: 0.8rem;
+  text-transform: none;
+  padding: 1rem;
+
+  transform: rotate(-0.01deg);
+}
+
+/*========== RESPONSIVO ==========*/
+@media (min-width: 1200px) {
+  /* reusable classes */
+  .container {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
+
+  /* navegação */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* layout */
+  main {
+    margin-top: var(--header-height);
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .r-footer > * {
+    flex: 1;
+  }
+
+  .footer .logo-final .nome {
+    padding-right: 2rem;
+  }
+
+  .footer .text-footer {
+    text-align: left;
+  }
+
+  .features {
+    flex-grow: 2;
+  }
+
+  .l-footer {
+    flex: 1 0px;
+  }
+
+  .r-footer {
+    flex: 2 0px;
+  }
+  .r-footer .boxx {
+    text-align: right;
+    padding-top: 0rem;
+  }
+}
