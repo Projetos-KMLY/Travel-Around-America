@@ -157,3 +157,35 @@ footer {
     margin-top: -1.5rem;
 
 }
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    div.img .login {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+    }
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .formu {
+        background: none;
+        height: 32rem;
+        width: 25rem;
+        font-size: 0.8rem;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+.f {
+    display: flex;
+    justify-content: center;
+    width: 38vw;
+}
+
+form {
+    padding: 1rem 0rem 2rem 0rem;
+}
+}
