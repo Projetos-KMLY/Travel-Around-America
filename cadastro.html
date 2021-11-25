@@ -1,73 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 
 <head>
-    <!-- PAGE INFO -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Around America</title>
-
-    <!-- STYLE -->
-    <link rel="stylesheet" href="cadastro.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@300;400;500&display=swap"
-        rel="stylesheet">
-
+    <title>Login - Travel Around America</title>
 </head>
 
+<!--STYLES-->
+<link rel="stylesheet" href="login.css" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
 <body>
-
     <div class="container">
-        <div class="mulher">
-        <img src="./img/cadastrosvg.svg" alt="Mulher olhando o celular.">
+        <div class="img">
+            <img class="login" src="./img/cadastrosvg.svg" />
         </div>
-
-        <div class="row">
-            <div class="card border-0 shadow rounded-3 my-5">
-                <div class="card-body p-4 p-sm-5">
-                    <img class="logo" src="./img/logo.svg" alt="Mulher olhando o celular." width="300px">
-                    <form>
-                        <div class="form-floating mb-3">
-                            <label for="floatingInput">Nome</label>
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Nome">
-                        </div>
-                        <div class="form-floating mb-3">
-                            <label for="floatingPassword">E-mail</label>
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="E-mail">
-                        </div>
-                        <div class="form-floating mb-3">
-                            <label for="floatingPassword">Senha</label>
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-                        </div>
-                        <div class="form-floating mb-3">
-                            <label for="floatingPassword">Confirmar senha</label>
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Confirmar Senha">
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">CADASTRAR</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="f">
+            <div class="formu">
+                <img class="logo" src="./img/logo.svg" />
+                <form action="/pagina-processa-dados-do-form" method="post">
+                    <div>
+                        <input type="text" placeholder="Nome:" id="nome" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="E-mail:" id="email" />
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Senha:" id="senha" />
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" />
+                    </div>
+                    <input type="button" value="CADASTRAR" id="entrar" />
+                    <h4><a href="index.html">Voltar</a></h4>
+                </form>
             </div>
         </div>
     </div>
+    </div>
 </body>
-
-<!-- swiper -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- scrollreveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<!-- main.js -->
-<script src="main.js"></script>
-
-</body>
-
 </html>
