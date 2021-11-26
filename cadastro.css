@@ -29,8 +29,8 @@ body {
 .f {
     display: flex;
     justify-content: center;
-    float: left;
     width: 38vw;
+    float: left;
 }
 
 form {
@@ -154,7 +154,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -1.5rem;
+    margin-top: -1.3rem;
 
 }
 
