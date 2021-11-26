@@ -165,6 +165,10 @@ footer {
         display: flex;
     }
 
+    ::placeholder {
+        color: #797878;
+    }
+
     .container {
         justify-content: center;
         flex-direction: column;
