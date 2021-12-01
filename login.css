@@ -29,12 +29,11 @@ body {
 .f {
     display: flex;
     justify-content: center;
-    float: right;
     width: 38vw;
 }
 
 form {
-    padding: 3rem;
+    padding: 3rem 4rem 3rem 4rem;
 }
 
 .formu {
@@ -49,7 +48,7 @@ form {
 }
 
 div.img .login {
-    width: 45vw;
+    width: 48vw;
     height: 100vh;
     display: flex;
 }
@@ -57,8 +56,9 @@ div.img .login {
 .container {
     display: flex;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 5rem 0 5rem;
 }
 
 #email {
@@ -92,19 +92,75 @@ div.img .login {
     outline: none;
 }
 
-    
-    .btn-login {
-        font-size: 0.9rem;
-        letter-spacing: 0.05rem;
-        padding: 0.75rem 1rem;
+#entrar {
+    font-family: Poppins;
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: #13A2CF;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 6rem;
+    margin: 8rem 5.8rem 0.5rem 5.8rem;
+    cursor: pointer;
+}
+
+a {
+    font-family: Poppins;
+    font-size: 0.7rem;
+    margin: 0 7.8rem 0 7.8rem;
+    color: #13A2CF;
+    text-decoration: none;
+}
+
+footer {
+    font-family: Poppins;
+    font-size: 0.8rem;
+    display: flex;
+    color: #1195a8;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.3rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    div.img .login {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
     }
-    
-    .btn-google {
-        color: white !important;
-        background-color: #ea4335;
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    
-    .btn-facebook {
-        color: white !important;
-        background-color: #3b5998;
+
+    form {
+        padding: 1.7rem 3rem 1.7rem 3rem ;
     }
+
+    .formu {
+        background-color: transparent;
+        height: 32rem;
+        width: 25rem;
+        font-size: 0.8rem;
+        border-radius: 0;
+        padding: 1.7rem 0 1.7rem 0;
+        box-shadow: 0px 0px 0px rgb(0 0 0 / 0%);
+    }
+
+    #email {
+        border-bottom: 2px solid #797878;
+    }
+
+    #senha {
+        border-bottom: 2px solid #797878;
+    }
+
+
+    #entrar {
+        margin: 3rem 5.8rem 0.5rem 5.8rem;
+    }
+}

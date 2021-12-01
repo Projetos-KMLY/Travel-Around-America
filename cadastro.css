@@ -1,57 +1,274 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #4BAAB8, #9ED3DC, #FFF);
+    background-attachment: fixed;
+}
+
 body {
-    background: linear-gradient(180deg, #008498, #3EB3C7, #FFF);
+    width: 100%;
+    height: 100%;
 }
 
-
-
-.btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
+.logo {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn-google {
-    color: white !important;
-    background-color: #ea4335;
+.f {
+    display: flex;
+    justify-content: center;
+    width: 38vw;
+    float: left;
 }
 
-.btn-facebook {
-    color: white !important;
-    background-color: #3b5998;
+form {
+    padding: 1rem 4rem 2rem 4rem;
 }
 
-.logo img {
-    width: 13rem;
-    float: right;
-    height: 2.4rem;
-}
-
-.mulher {
-    flex: 1 1 16rem;
-}
-
-.mulher img {
-    width: 40rem;
-}
-
-.card {
-    border-radius: 1.3rem !important;
+.formu {
+    padding: 3rem 0 3rem 0;
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    height: 32rem;
     width: 25rem;
-    margin-bottom: 100rem! important;
+    color: #555555;
+    font-size: 0.8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.img .login {
+    width: 48vw;
+    height: 100vh;
+    display: flex;
 }
 
 .container {
-    display: inline-flex;
-    float: left;
+    display: flex;
+    align-content: center;
+    margin: 0 5rem 0 5rem;
     justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: hidden;
+    align-items: center;
 }
 
-
-/* BOTÃO */
-
-.d-grid {
-    padding-top: 1rem;
-    padding-left: 5.5rem;
+#nome {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+    outline: none;
 }
+
+#email {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px;
+    outline: none;
+}
+
+#senha {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    margin-bottom: 37px;
+    border-bottom: 2px solid #adadad;
+    outline: none;
+}
+
+#confsenha {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    outline: none;
+}
+
+#entrar {
+    font-family: Poppins;
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: #13A2CF;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 7rem;
+    margin: 1.9rem 5rem 0.5rem 5rem;
+    cursor: pointer;
+}
+
+a {
+    font-family: Poppins;
+    font-size: 0.7rem;
+    margin: 0 7.5rem 0 7.5rem;
+    color: #13A2CF;
+    text-decoration: none;
+}
+
+footer {
+    font-family: Poppins;
+    font-size: 0.8rem;
+    color: #1195A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.3rem;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    div.img .login {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+    }
+
+    ::placeholder {
+        color: #797878;
+    }
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .formu {
+        background: none;
+        height: 32rem;
+        width: 25rem;
+        font-size: 0.8rem;
+        padding: 2rem 0 2rem 0;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .f {
+        display: flex;
+        justify-content: center;
+        width: 38vw;
+    }
+
+    form {
+        padding: 1rem 0rem 2rem 0rem;
+    }
+
+    #nome {
+        font-family: Poppins;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.2;
+        display: block;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 2px solid #797878;
+        margin-bottom: 37px;
+        outline: none;
+    }
+    
+    #email {
+        font-family: Poppins;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.2;
+        display: block;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 2px solid #797878;
+        margin-bottom: 37px;
+        outline: none;
+    }
+    
+    #senha {
+        font-family: Poppins;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.2;
+        display: block;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        padding: 0 5px;
+        border: none;
+        margin-bottom: 37px;
+        border-bottom: 2px solid #797878;
+        outline: none;
+    }
+    
+    #confsenha {
+        font-family: Poppins;
+        font-size: 15px;
+        color: #555555;
+        line-height: 1.2;
+        display: block;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 2px solid #797878;
+        outline: none;
+    }
+    
+    #entrar {
+        font-family: Poppins;
+        font-size: 1rem;
+        padding: 0.3rem;
+        color: white;
+        background-color: #13A2CF;
+        border: none;
+        border-radius: 0.3rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 7rem;
+        margin: 1.9rem 5rem 0.5rem 5rem;
+        cursor: pointer;
+    }
+}
+
