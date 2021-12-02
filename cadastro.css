@@ -110,7 +110,7 @@ div.img .login {
     outline: none;
 }
 
-#pass {
+#confsenha {
     font-family: Poppins;
     font-size: 15px;
     color: #555555;
@@ -125,15 +125,39 @@ div.img .login {
     outline: none;
 }
 
-.olho {
-    cursor: pointer;
-    width: 2rem;
-    margin-left: -45px;
-  }
-
-.senhadiv {
+#o {
+    width: 1.2rem;
+    margin-left: -27px;
+    background-color: transparent;
+    border: none;
+    transition: .2s;
+    opacity: .5;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #os {
+    width: 1.2rem;
+    margin-left: -27px;
+    background-color: transparent;
+    border: none;
+    transition: .2s;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -2.2rem;
+  }
+
+  .errorInput {
+    border-bottom: 2px solid rgb(207, 53, 53) !important;
+}
+
+.senhadiv {
+    display: flex; 
 }
 
 #entrar {
