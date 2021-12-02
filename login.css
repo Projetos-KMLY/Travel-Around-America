@@ -26,6 +26,11 @@ body {
     margin-right: auto;
 }
 
+.f {
+    display: flex;
+    justify-content: center;
+    width: 38vw;
+}
 
 form {
     padding: 3rem 4rem 3rem 4rem;
@@ -43,7 +48,7 @@ form {
 }
 
 div.img .login {
-    width: 45vw;
+    width: 48vw;
     height: 100vh;
     display: flex;
 }
