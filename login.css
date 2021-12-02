@@ -77,6 +77,10 @@ div.img .login {
     outline: none;
 }
 
+.olho {
+    display: flex;
+}
+
 #senha {
     font-family: Poppins;
     font-size: 15px;
