@@ -77,17 +77,13 @@ div.img .login {
     outline: none;
 }
 
-.o  {
-    width: 1.2rem;
-}
-
 .s {
     display: flex;
 }
 
-.olho {
-    width: 40px;
-    margin-left: -40px;
+#o {
+    width: 1.2rem;
+    margin-left: -27px;
     background-color: transparent;
     border: none;
     transition: .2s;
