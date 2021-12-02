@@ -149,10 +149,15 @@ div.img .login {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-top: -2.2rem;
   }
 
+  .errorInput {
+    border-bottom: 2px solid rgb(207, 53, 53) !important;
+}
+
 .senhadiv {
-    display: flex;
+    display: flex; 
 }
 
 #entrar {
