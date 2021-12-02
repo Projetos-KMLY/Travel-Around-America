@@ -72,6 +72,15 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
   }
 
+  
+#logo img {
+    width: 10rem;
+    float: left;
+    height: 2.4rem;
+    margin-left: 3rem;
+  }
+
+
  /*======= MODAL =======*/
 
 .modal-overlay{
