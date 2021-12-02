@@ -94,7 +94,7 @@ div.img .login {
     outline: none;
 }
 
-#pass {
+#senha {
     font-family: Poppins;
     font-size: 15px;
     color: #555555;
@@ -127,10 +127,14 @@ div.img .login {
 
 .olho {
     cursor: pointer;
-    left: 160px;
-    position: absolute;
-    width: 20px;
+    width: 2rem;
+    margin-left: -45px;
   }
+
+.senhadiv {
+    display: flex;
+    align-items: center;
+}
 
 #entrar {
     font-family: Poppins;
