@@ -12,12 +12,13 @@
     
 }
 
-nav .menu-lateral {
+.menu-lateral {
     position: absolute;
+    width: 2.5rem;
     left: 3rem;
-    right: 94.79%;
-    top: 0.5rem;
-    bottom: 95.28%;
+    right: 2rem;
+    top: 1rem;
+   
     
  
 }
