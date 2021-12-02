@@ -84,6 +84,7 @@ div.img .login {
 #o {
     width: 1.2rem;
     margin-left: -40px;
+    margin-left: -27px;
     background-color: transparent;
     border: none;
     transition: .2s;
@@ -175,7 +176,6 @@ footer {
     #senha {
         border-bottom: 2px solid #797878;
     }
-
 
     #entrar {
         margin: 3rem 5.8rem 0.5rem 5.8rem;
