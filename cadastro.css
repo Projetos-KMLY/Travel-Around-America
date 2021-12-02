@@ -110,7 +110,7 @@ div.img .login {
     outline: none;
 }
 
-#confsenha {
+#pass {
     font-family: Poppins;
     font-size: 15px;
     color: #555555;
@@ -124,6 +124,13 @@ div.img .login {
     border-bottom: 2px solid #adadad;
     outline: none;
 }
+
+.olho {
+    cursor: pointer;
+    left: 160px;
+    position: absolute;
+    width: 20px;
+  }
 
 #entrar {
     font-family: Poppins;
