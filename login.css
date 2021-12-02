@@ -142,6 +142,13 @@ footer {
     margin-top: -1.3rem;
 }
 
+
+.errorInput {
+    border-bottom: 2px solid rgb(207, 53, 53) !important;
+}
+
+
+
 @media only screen and (min-width: 300px) and (max-width: 700px) {
     div.img .login {
         width: 100vw;
