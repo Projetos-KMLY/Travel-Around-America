@@ -1,13 +1,31 @@
-document.getElementById('olho').addEventListener('mousedown', function() {
-    document.getElementById('pass').type = 'text';
-  });
-  
-  document.getElementById('olho').addEventListener('mouseup', function() {
-    document.getElementById('pass').type = 'password';
-  });
-  
-  // Para que o password não fique exposto apos mover a imagem.
-  document.getElementById('olho').addEventListener('mousemove', function() {
-    document.getElementById('pass').type = 'password';
-  });
-  
+var o = document.getElementById('o')
+
+o.addEventListener('click', function() {
+
+    let password = document.getElementById('confsenha')
+
+    if(password.type == "password") {
+        password.type = "text"
+        o.setAttribute("src", "./img/olhoaberto.svg")
+    } else {
+        password.type = "password"
+        o.setAttribute("src", "./img/olhoechado.svg")
+
+    }
+})
+
+var os = document.getElementById('os')
+
+os.addEventListener('click', function() {
+
+    let password = document.getElementById('senha')
+
+    if(password.type == "password") {
+        password.type = "text"
+        os.setAttribute("src", "./img/olhoaberto.svg")
+    } else {
+        password.type = "password"
+        os.setAttribute("src", "./img/olhoechado.svg")
+
+    }
+})
