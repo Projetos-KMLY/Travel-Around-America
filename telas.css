@@ -12,17 +12,12 @@
     text-decoration: none;
   }
   
-  img {
-    width: 100%;
-    height: auto;
-  }
   
   /*======= VARIABLES =======*/
   :root {
     --header-height: 4.5rem;
   
     /* colors */
-    /* HSL color mode */
     --base-color: #1195a8;
     --base-color-second: #0c7c8d;
     --color-elements: #fcf9c1;
@@ -85,13 +80,13 @@
     width: 10rem;
     float: left;
     height: 2.4rem;
-    margin-left: 4rem;
+    margin-left: 10rem;
   }
 
 .menu-lateral {
     position: absolute;
     width: 2rem;
-    left: 1.5rem;
+    left: 3rem;
     top: 1rem;
 }
 
