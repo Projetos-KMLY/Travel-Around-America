@@ -14,7 +14,7 @@
 
 .menu-lateral {
     position: absolute;
-    width: 2.5rem;
+    width: 2.2rem;
     left: 3rem;
     right: 2rem;
     top: 1rem;
@@ -50,7 +50,7 @@
     margin-top: 2rem;
     width: 200rem;
     height: 49.62rem;
-    left: 80rem;
+    float-waint
     top: 10.81rem;
 
 }
