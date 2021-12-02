@@ -6,10 +6,10 @@ o.addEventListener('click', function() {
 
     if(password.type == "password") {
         password.type = "text"
-        o.setAttribute("src", "./img/olhoechado.svg")
+        o.setAttribute("src", "./img/olhoaberto.svg")
     } else {
         password.type = "password"
-        o.setAttribute("src", "./img/olhoaberto.svg")
+        o.setAttribute("src", "./img/olhoechado.svg")
 
     }
 })
