@@ -77,10 +77,10 @@ g .title {
 /*======= LOGO =======*/
 
 nav .logo img {
-  width: 10rem;
+  width: 9rem;
   float: left;
   height: 2.4rem;
-  margin-left: -4rem;
+  margin-left: 1rem;
 }
 
 /*======= NAVEGAÇÂO =======*/
@@ -94,10 +94,11 @@ nav {
 }
 
 nav .menu-lateral {
-  height: 35%;
-  width: 2rem;
+  height: 30%;
+  width: 1.6rem;
   position: absolute;
   left: 5%;
+  cursor: pointer;
 }
 
 /*======= PRINCIPAL =======*/
@@ -116,11 +117,11 @@ nav .menu-lateral {
   flex: 1 1 16rem;
   padding: 0px 20px;
   text-align: right;
-  width: 90%;
-  height: 82vh;
+  width: 100vw;
+  height: 100vh;
 }
 .princ .mapa img {
-  width: 120%;
+  width: 100%;
   margin-left: -2rem;
 }
 .princ .filtro {
