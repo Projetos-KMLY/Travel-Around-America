@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+    /*======= BASE =======*/
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font: 400 1rem var(--font);
+      color: var(--text-color);
+      padding-top: var(--header-height);
+      background-image:  url(./img/paises-background/Brasil.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+
+    
   ul {
     list-style: none;
   }
@@ -11,6 +26,7 @@
   a {
     text-decoration: none;
   }
+
   
   /*======= VARIABLES =======*/
   :root {
@@ -37,24 +53,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-image:  url(./img/paises-background/Brasil.svg);
-    background-repeat: no-repeat;
+  
     height: calc(100vh - 4rem);
+    width: 100%;
   }
 
-  /*======= BASE =======*/
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font: 400 1rem var(--font);
-    color: var(--text-color);
-    padding-top: var(--header-height);
-  }
-  
+
   /*======= LAYOUT =======*/
   
   #header {
