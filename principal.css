@@ -41,16 +41,13 @@ img {
 
 /*======= BASE =======*/
 html {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-}
-
-body {
   font: 400 1rem var(--font);
   color: var(--text-color);
   background: linear-gradient(180deg, #008498, #03aac4);
   -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
 }
 
 g .title {
@@ -63,12 +60,9 @@ g .title {
 
 #header {
   border-bottom: 1px solid #0d8ea1;
-  margin-bottom: 2rem;
   display: flex;
   height: 4rem;
   align-items: center;
-
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -97,7 +91,6 @@ nav {
 }
 
 nav .menu-lateral {
-  height: 30%;
   width: 1.6rem;
   position: absolute;
   left: 5%;
@@ -110,10 +103,10 @@ nav .menu-lateral {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5.5rem;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  margin: 1rem 0 0 0;
 }
 
 .princ .mapa {
@@ -121,19 +114,18 @@ nav .menu-lateral {
   padding: 0px 10px;
   text-align: right;
   width: 100vw;
-  height: 100vh;
+  height: 84vh;
 }
-.princ .mapa img {
+.america {
   width: 100%;
   height: 85vh;
   margin-left: -2rem;
 }
+
 .princ .filtro {
   flex: 1 1 16rem;
   padding: 0px 20px;
   text-align: center;
-  width: 50%;
-  height: 82vh;
 }
 .princ .filtro .filt {
   align-items: center;
@@ -148,13 +140,18 @@ nav .menu-lateral {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   margin-bottom: 1.5rem;
-  margin-top: 1rem;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 7rem;
 }
 
 .button {
   background-color: var(--color-elements);
   color: black;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding: 0 2rem;
   transition: background 0.3s;
@@ -162,6 +159,8 @@ nav .menu-lateral {
   border-radius: 15px;
   font-size: var(--subtitle-font-size);
   justify-content: center;
+  border: none;
+  margin-bottom: 1.5rem;
 }
 
 .button:hover {
@@ -180,7 +179,7 @@ nav .menu-lateral {
 .footer {
   display: block;
   color: var(--title-color);
-  margin-top: -8rem;
+
 }
 
 .footer p {
@@ -189,7 +188,6 @@ nav .menu-lateral {
 
   font-size: 0.8rem;
   text-transform: none;
-  padding: 1rem;
 
   transform: rotate(-0.01deg);
 }
@@ -234,10 +232,24 @@ nav .menu-lateral {
   }
 
   /* layout */
-  main {
-    margin-top: var(--header-height);
-  }
 }
+
+.c {
+  display: none;
+}
+
+.culin {
+  display: none;
+}
+
+.idio {
+  display: none;
+}
+
+.pont {
+  display: none;
+}
+
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
