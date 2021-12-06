@@ -42,6 +42,8 @@ img {
 /*======= BASE =======*/
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -50,6 +52,7 @@ body {
   background: linear-gradient(180deg, #008498, #03aac4);
   -webkit-font-smoothing: antialiased;
 }
+
 g .title {
   font: 500 var(--font);
   color: var(--clean);
@@ -77,10 +80,10 @@ g .title {
 /*======= LOGO =======*/
 
 nav .logo img {
-  width: 10rem;
+  width: 9rem;
   float: left;
   height: 2.4rem;
-  margin-left: -4rem;
+  margin-left: 1rem;
 }
 
 /*======= NAVEGAÇÂO =======*/
@@ -94,10 +97,11 @@ nav {
 }
 
 nav .menu-lateral {
-  height: 35%;
-  width: 2rem;
+  height: 30%;
+  width: 1.6rem;
   position: absolute;
   left: 5%;
+  cursor: pointer;
 }
 
 /*======= PRINCIPAL =======*/
@@ -114,13 +118,14 @@ nav .menu-lateral {
 
 .princ .mapa {
   flex: 1 1 16rem;
-  padding: 0px 20px;
+  padding: 0px 10px;
   text-align: right;
-  width: 90%;
-  height: 82vh;
+  width: 100vw;
+  height: 100vh;
 }
 .princ .mapa img {
-  width: 120%;
+  width: 100%;
+  height: 85vh;
   margin-left: -2rem;
 }
 .princ .filtro {
@@ -133,7 +138,6 @@ nav .menu-lateral {
 .princ .filtro .filt {
   align-items: center;
   justify-content: center;
-  margin-top: 5.5rem;
 }
 
 .princ h1 {
@@ -176,10 +180,7 @@ nav .menu-lateral {
 .footer {
   display: block;
   color: var(--title-color);
-}
-
-.footer > * {
-  flex: 1 100%;
+  margin-top: -8rem;
 }
 
 .footer p {
