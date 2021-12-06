@@ -161,6 +161,7 @@ nav .menu-lateral {
   justify-content: center;
   border: none;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -175,6 +176,66 @@ nav .menu-lateral {
   text-align: center;
 }
 
+.carac {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.equa, .que, .temp, .trop, .outr {
+  width: 2rem;
+}
+
+#equatorial, #quente, #temperado, #tropical, #outros {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--color-elements);
+  border-radius: 60rem;
+  cursor: pointer;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.cald, .exo, .mas, .prot, .pf, .rai {
+  width: 2rem;
+}
+
+#caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--color-elements);
+  border-radius: 60rem;
+  cursor: pointer;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.esp, .ing, .outri {
+  width: 2rem;
+}
+
+#ingles, #espanhol, #outrosidi {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--color-elements);
+  border-radius: 60rem;
+  cursor: pointer;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.city, .flores, .gel, .hist, .mont, .pra {
+  width: 2rem;
+}
+
+#cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--color-elements);
+  border-radius: 60rem;
+  cursor: pointer;
+  margin: 0 0.3rem 0 0.3rem;
+}
 /*======= FOOTER =======*/
 .footer {
   display: block;
