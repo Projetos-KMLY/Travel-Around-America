@@ -9,27 +9,29 @@
     /* colors */
     /* HSL color mode */
     --base-color: #1195a8;
-    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-lateral {
     position: absolute;
-    width: 2.2rem;
+    width: 1.7rem;
+    height: 1.4rem;
     left: 3rem;
-    right: 2rem;
-    top: 1rem;
-   
-}
-  
-.logo {
-    position: absolute;
-    width: 12.62rem;
-    height: 2.75rem;
-    left: 10.56rem;
-    top: 0.5rem;
 }
 
-#header {
+.logo {
+    width: 10rem;
+    float: left;
+    height: 2.4rem;
+    margin-left: 8rem;
+}
+
+header {
     border-bottom: 1px solid #0d8ea1;
     margin-bottom: 2rem;
     display: flex;
@@ -43,14 +45,205 @@
     background-color: var(--base-color);
     width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
-  }
+}
 
-#imgFinal{
-    position: absolute;
-    margin-top: 2rem;
-    width: 200rem;
-    height: 49.62rem;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 0 0;
+}
+
+div#imgFinal img {
+    width: 48vw;
+    height: 85vh;
+    display: flex;
+    margin: 0 0 0 -6rem;
+}
+
+#textoFinal {
+    text-align: right;
+}
+
+.texto1 {
+    font-family: Poppins;
+    font-style: medium;
+    font-size: 1.4rem;
+    padding: 0 0 0.9rem 0;
+}
+
+.texto2 {
+    font-family: Poppins;
+    font-style: medium;
+    color: #1195A8;
+    font-size: 1.4rem;
+    padding: 0 0 0.9rem 0;
+}
+
+.p2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 0 0 0.3rem 0;
+}
+
+.p3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 0 0 2rem 0;
+}
+
+input {
+    font-family: Poppins;
+    font-style: normal;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    background-color: #139340;
+    cursor: pointer;
+    float: right;
+}
+
+input:hover {
+    background-color: #139340;
+    opacity: 0.9;   
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        margin: 0 2rem 0 2rem;
+    }
+
+    #textoFinal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: -3rem 0 3rem 0;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#imgFinal img {
+        width: 17rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        margin: 0 2rem 0 2rem;
+        
+    }
+
+    #textoFinal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: -3rem 0 3rem 0;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#imgFinal img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        margin: 4rem 2rem 0 2rem;
+        
+    }
+
+    #textoFinal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem 0 3rem 0;
+    }
+
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#imgFinal img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) { 
+    .container {
+        justify-content: space-evenly;
+    }
+
+    #imgFinal img {
+        margin: 0 0 0 2rem;
+    }
     
-    top: 10.81rem;
+}
 
+@media only screen and (min-width: 1800px) and (max-width: 2000px) { 
+
+    #imgFinal img {
+        margin: 0 0 0 2rem;
+    }
+    
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .texto1 {
+        font-size: 2rem;
+
+    }
+
+    .texto2 {
+        font-size: 2rem;
+
+    }
+
+    .p2 {
+        font-size: 1.5rem;
+
+    }
+
+    .p3 {
+        font-size: 1.5rem;
+
+    }
 }
