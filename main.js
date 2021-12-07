@@ -83,13 +83,7 @@ btn.addEventListener('click', function () {
   }
 })
 
-/*desativar botão enquanto um estiver clicado */
-/*
-btn.addEventListener('click', function () {
-  if (pont == 'click') {
-    
-  }
-})/
+
 
 /* mudar cor ao clicar categorias */
 
