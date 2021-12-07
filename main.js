@@ -17,70 +17,49 @@ for (const link of links) {
   })
 }
 
+
 /* esconder caracteristicas */
 
-var btn = document.getElementById('clima')
+/*
+const itens_caracteristica = querySelectorAll(".item-caracteristica") 
+itens_caracteristica.addEventListener('click', function (event){})
+*/
+
 var c = document.querySelector('.c')
-btn.addEventListener('click', function () {
-  if (c.style.display === 'block') {
-    c.style.display = 'none'
-    document.getElementById('idioma').disabled = false
-    document.getElementById('culinaria').disabled = false
-    document.getElementById('pontos').disabled = false
-  } else {
-    c.style.display = 'block'
-    document.getElementById('idioma').disabled = true
-    document.getElementById('culinaria').disabled = true
-    document.getElementById('pontos').disabled = true
-  }
-})
-
-var btn = document.getElementById('culinaria')
 var culin = document.querySelector('.culin')
-btn.addEventListener('click', function () {
-  if (culin.style.display === 'block') {
-    culin.style.display = 'none'
-    document.getElementById('idioma').disabled = false
-    document.getElementById('pontos').disabled = false
-    document.getElementById('clima').disabled = false
-  } else {
-    culin.style.display = 'block'
-    document.getElementById('idioma').disabled = true
-    document.getElementById('pontos').disabled = true
-    document.getElementById('clima').disabled = true
-  }
-})
-
-var btn = document.getElementById('idioma')
 var idio = document.querySelector('.idio')
-btn.addEventListener('click', function () {
-  if (idio.style.display === 'block') {
-    idio.style.display = 'none'
-    document.getElementById('pontos').disabled = false
-    document.getElementById('culinaria').disabled = false
-    document.getElementById('clima').disabled = false
-  } else {
-    idio.style.display = 'block'
-    document.getElementById('pontos').disabled = true
-    document.getElementById('culinaria').disabled = true
-    document.getElementById('clima').disabled = true
-  }
+var pont = document.querySelector('.pont')
+
+var btnClima = document.getElementById('clima')
+btnClima.addEventListener('click', function () {
+  c.style.display = 'block'
+  culin.style.display = 'none'
+  idio.style.display = 'none'
+  pont.style.display = 'none'
 })
 
-var btn = document.getElementById('pontos')
-var pont = document.querySelector('.pont')
-btn.addEventListener('click', function () {
-  if (pont.style.display === 'block') {
-    pont.style.display = 'none'
-    document.getElementById('idioma').disabled = false
-    document.getElementById('culinaria').disabled = false
-    document.getElementById('clima').disabled = false
-  } else {
-    pont.style.display = 'block'
-    document.getElementById('idioma').disabled = true
-    document.getElementById('culinaria').disabled = true
-    document.getElementById('clima').disabled = true
-  }
+var btnCulinaria = document.getElementById('culinaria')
+btnCulinaria.addEventListener('click', function () {
+  c.style.display = 'none'
+  culin.style.display = 'block'
+  idio.style.display = 'none'
+  pont.style.display = 'none'
+})
+
+var btnIdioma = document.getElementById('idioma')
+btnIdioma.addEventListener('click', function () {
+  c.style.display = 'none'
+  culin.style.display = 'none'
+  idio.style.display = 'block'
+  pont.style.display = 'none'
+})
+
+var btnPontost = document.getElementById('pontos')
+btnPontost.addEventListener('click', function () {
+  c.style.display = 'none'
+  culin.style.display = 'none'
+  idio.style.display = 'none'
+  pont.style.display = 'block'
 })
 
 
