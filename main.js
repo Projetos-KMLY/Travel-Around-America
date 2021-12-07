@@ -62,8 +62,6 @@ btnPontost.addEventListener('click', function () {
   pont.style.display = 'block'
 })
 
-
-
 /* mudar cor ao clicar categorias */
 
 let myButton = document.querySelectorAll('.categorias > button')
