@@ -152,3 +152,125 @@ function removeStyles4() {
 }
 
 /* mudar cor ao clicar categorias */
+
+/* botoes */
+
+const open = document.getElementById('equatorial');
+const open2 = document.getElementById('quente');
+const open3 = document.getElementById('temperado');
+const open4 = document.getElementById('tropical');
+const open5 = document.getElementById('outros');
+
+const open6 = document.getElementById('caldo');
+const open7 = document.getElementById('exotico');
+const open8 = document.getElementById('massa');
+const open9 = document.getElementById('proteina');
+const open10 = document.getElementById('pratof');
+const open11 = document.getElementById('raizes');
+
+const open12 = document.getElementById('espanhol');
+const open13 = document.getElementById('ingles');
+const open14 = document.getElementById('outrosidi');
+
+const open15 = document.getElementById('cidade');
+const open16 = document.getElementById('floresta');
+const open17 = document.getElementById('geleira');
+const open18 = document.getElementById('historico');
+const open19 = document.getElementById('montanha');
+const open20 = document.getElementById('praia');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('fechar');
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+});
+
+open.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+  
+});
+
+open2.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open3.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open4.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open5.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+
+
+open6.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open7.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open8.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open9.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open10.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open11.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+
+
+open12.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open13.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open14.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+
+
+open15.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open16.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open17.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open18.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open19.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+open20.addEventListener('click', () =>  { 
+  modal_container.classList.add('show');
+});
+
+/* botoes */
+
