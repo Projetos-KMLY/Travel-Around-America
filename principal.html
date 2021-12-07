@@ -41,7 +41,8 @@
 
 
       <div class="mapa">
-        <img class="america" src="img/continente.png" alt="paíse America Latina" />
+        <img class="america" src="img/continente.png"/>
+        
       </div>
 
       <!-- FILTRO -->
@@ -50,6 +51,34 @@
         <div class="filt">
 
           <h1>SELECIONE UMA CATEGORIA:</h1>
+          <div class="categorias">
+            <button id="clima" class="button cli" data-toggle="collapse" data-target=".c">Clima</button>
+            <button id="culinaria" class="button cul">Culinária</button>
+            <button id="idioma" class="button idi">Idioma</button>
+            <button id="pontos" class="button pontos">Pontos Turísticos</button>
+          </div>
+        </div>
+
+      <div class="carac">
+<div class="c" class="collapse">
+
+        <h1>SELECIONE UM CLIMA</h1>
+      <button id="equatorial"><img class="equa" src="./img/caracteristicas/equatorial.svg"/></button>
+      <button id="quente"><img class="que" src="./img/caracteristicas/quente.svg"/></button>
+      <button id="temperado"><img class="temp" src="./img/caracteristicas/temperado.svg"/></button>
+      <button id="tropical"><img class="trop" src="./img/caracteristicas/tropical.svg"/></button>
+      <button id="outros"><img class="outr" src="./img/caracteristicas/outros.svg"/></button>
+    </div>
+    <div class="culin">
+      <h1>SELECIONE UMA CULINÁRIA</h1>
+      <button id="caldo"><img class="cald" src="./img/caracteristicas/caldo.svg"/></button>
+      <button id="exotico"><img class="exo" src="./img/caracteristicas/exotico.svg"/></button>
+      <button id="massa"><img class="mas" src="./img/caracteristicas/massa.svg"/></button>
+      <button id="proteina"><img class="prot" src="./img/caracteristicas/proteinas.svg"/></button>
+      <button id="pratof"><img class="pf" src="./img/caracteristicas/PF.svg"/></button>
+      <button id="raizes"><img class="rai" src="./img/caracteristicas/raizes.svg"/></button>
+      </div>
+
           <div class="categorias" data-parent="#myGroup">
 
             <button id="clima" class="button cli" type="button">Clima</button>
@@ -93,6 +122,7 @@
             <button id="montanha"><img class="mont" src="./img/caracteristicas/montanha.svg" /></button>
             <button id="praia"><img class="pra" src="./img/caracteristicas/praia.svg" /></button>
           </div>
+
 
         </div>
       </div>
