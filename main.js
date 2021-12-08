@@ -17,8 +17,71 @@ for (const link of links) {
   })
 }
 
-
 /* esconder caracteristicas */
+
+var btn = document.getElementById('clima')
+var c = document.querySelector('.c')
+btn.addEventListener('click', function () {
+  if (c.style.display === 'block') {
+    c.style.display = 'none'
+    document.getElementById('idioma').disabled = false
+    document.getElementById('culinaria').disabled = false
+    document.getElementById('pontos').disabled = false
+  } else {
+    c.style.display = 'block'
+    document.getElementById('idioma').disabled = true
+    document.getElementById('culinaria').disabled = true
+    document.getElementById('pontos').disabled = true
+  }
+})
+
+var btn = document.getElementById('culinaria')
+var culin = document.querySelector('.culin')
+btn.addEventListener('click', function () {
+  if (culin.style.display === 'block') {
+    culin.style.display = 'none'
+    document.getElementById('idioma').disabled = false
+    document.getElementById('pontos').disabled = false
+    document.getElementById('clima').disabled = false
+  } else {
+    culin.style.display = 'block'
+    document.getElementById('idioma').disabled = true
+    document.getElementById('pontos').disabled = true
+    document.getElementById('clima').disabled = true
+  }
+})
+
+var btn = document.getElementById('idioma')
+var idio = document.querySelector('.idio')
+btn.addEventListener('click', function () {
+  if (idio.style.display === 'block') {
+    idio.style.display = 'none'
+    document.getElementById('pontos').disabled = false
+    document.getElementById('culinaria').disabled = false
+    document.getElementById('clima').disabled = false
+  } else {
+    idio.style.display = 'block'
+    document.getElementById('pontos').disabled = true
+    document.getElementById('culinaria').disabled = true
+    document.getElementById('clima').disabled = true
+  }
+})
+
+var btn = document.getElementById('pontos')
+var pont = document.querySelector('.pont')
+btn.addEventListener('click', function () {
+  if (pont.style.display === 'block') {
+    pont.style.display = 'none'
+    document.getElementById('idioma').disabled = false
+    document.getElementById('culinaria').disabled = false
+    document.getElementById('clima').disabled = false
+  } else {
+    pont.style.display = 'block'
+    document.getElementById('idioma').disabled = true
+    document.getElementById('culinaria').disabled = true
+    document.getElementById('clima').disabled = true
+  }
+})
 
 /*
 const itens_caracteristica = querySelectorAll(".item-caracteristica") 
@@ -150,3 +213,117 @@ function removeStyles4() {
 }
 
 /* mudar cor ao clicar categorias */
+
+/* botoes */
+
+const open = document.getElementById('equatorial')
+const open2 = document.getElementById('quente')
+const open3 = document.getElementById('temperado')
+const open4 = document.getElementById('tropical')
+const open5 = document.getElementById('outros')
+
+const open6 = document.getElementById('caldo')
+const open7 = document.getElementById('exotico')
+const open8 = document.getElementById('massa')
+const open9 = document.getElementById('proteina')
+const open10 = document.getElementById('pratof')
+const open11 = document.getElementById('raizes')
+
+const open12 = document.getElementById('espanhol')
+const open13 = document.getElementById('ingles')
+const open14 = document.getElementById('outrosidi')
+
+const open15 = document.getElementById('cidade')
+const open16 = document.getElementById('floresta')
+const open17 = document.getElementById('geleira')
+const open18 = document.getElementById('historico')
+const open19 = document.getElementById('montanha')
+const open20 = document.getElementById('praia')
+const modal_container = document.getElementById('modal_container')
+const close = document.getElementById('fechar')
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show')
+})
+
+open.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open2.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open3.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open4.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open5.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open6.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open7.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open8.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open9.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open10.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open11.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open12.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open13.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open14.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open15.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open16.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open17.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open18.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open19.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+open20.addEventListener('click', () => {
+  modal_container.classList.add('show')
+})
+
+/* botoes */
