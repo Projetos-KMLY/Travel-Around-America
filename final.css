@@ -151,6 +151,11 @@ input:hover {
         
     }
 
+    div#imgFinal img {
+        width: 20rem;
+
+    }
+
     #textoFinal {
         display: flex;
         justify-content: center;
@@ -177,7 +182,6 @@ input:hover {
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
     .container {
         flex-direction: column;
-        margin: 4rem 2rem 0 2rem;
         
     }
 
@@ -201,6 +205,8 @@ input:hover {
         align-items: center;
         justify-content: center;
         margin:0;
+        height: 50vh;
+
     }
 }
 
