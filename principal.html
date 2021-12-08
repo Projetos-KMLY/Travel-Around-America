@@ -1,123 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="imagem/svg" href="./img/mundo.svg" />
+    <title>Principal - Travel Around America</title>
 
-<head>
-  <!-- PAGE INFO -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="imagem/svg" href="./img/mundo.svg" />
-  <title>Principal - Travel Around America</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="principal.css" />
 
-  <!-- STYLES -->
-  <link rel="stylesheet" href="principal.css" />
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- Icones -->
-  <link rel="stylesheet" href="assets/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&family=Poppins:wght@300;400;500&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <!-- /menu -->
+        <img class="menu-lateral" src="img/menu.png" />
 
-<body>
-  <header id="header">
-    <nav class="container">
-      <!-- /menu -->
-      <img class="menu-lateral" src="img/menu.png" />
+        <a class="logo" href="index.html">
+          <img src="img/logo2.svg" alt="logo Travel Around America" />
+        </a>
+      </nav>
+    </header>
 
-      <a class="logo" href="index.html">
-        <img src="img/logo2.svg" alt="logo Travel Around America" />
-      </a>
-    </nav>
-  </header>
+    <main class="container">
+      <div class="princ">
+        <!-- MAPA -->
 
-  <main class="container">
+        <!--<div class="mapa">
+          <img class="america" src="img/continente.png" />
+        </div>-->
+        <div id="america"></div>
 
-    <div class="princ">
-      <!-- MAPA -->
+        <!-- FILTRO -->
 
+        <div class="filtro">
+          <div class="filt">
+            <h1>SELECIONE UMA CATEGORIA:</h1>
+            <div class="categorias">
+              <button id="clima" class="button cli">Clima</button>
+              <button id="culinaria" class="button cul">Culinária</button>
+              <button id="idioma" class="button idi">Idioma</button>
+              <button id="pontos" class="button pontos">
+                Pontos Turísticos
+              </button>
+            </div>
+          </div>
 
-      <div class="mapa">
-        <img class="america" src="img/continente.png"/>
-        
-      </div>
+          <div class="carac">
+            <div class="c">
+              <h1>SELECIONE UM CLIMA</h1>
+              <button id="equatorial">
+                <img class="equa" src="./img/caracteristicas/equatorial.svg" />
+              </button>
+              <button id="quente">
+                <img class="que" src="./img/caracteristicas/quente.svg" />
+              </button>
+              <button id="temperado">
+                <img class="temp" src="./img/caracteristicas/temperado.svg" />
+              </button>
+              <button id="tropical">
+                <img class="trop" src="./img/caracteristicas/tropical.svg" />
+              </button>
+              <button id="outros">
+                <img class="outr" src="./img/caracteristicas/outros.svg" />
+              </button>
+            </div>
+            <div class="culin">
+              <h1>SELECIONE UMA CULINÁRIA</h1>
+              <button id="caldo">
+                <img class="cald" src="./img/caracteristicas/caldo.svg" />
+              </button>
+              <button id="exotico">
+                <img class="exo" src="./img/caracteristicas/exotico.svg" />
+              </button>
+              <button id="massa">
+                <img class="mas" src="./img/caracteristicas/massa.svg" />
+              </button>
+              <button id="proteina">
+                <img class="prot" src="./img/caracteristicas/proteinas.svg" />
+              </button>
+              <button id="pratof">
+                <img class="pf" src="./img/caracteristicas/PF.svg" />
+              </button>
+              <button id="raizes">
+                <img class="rai" src="./img/caracteristicas/raizes.svg" />
+              </button>
+            </div>
 
-      <!-- FILTRO -->
+            <div class="idio">
+              <h1>SELECIONE UM IDIOMA</h1>
+              <button id="espanhol">
+                <img class="esp" src="./img/caracteristicas/espanhol.svg" />
+              </button>
+              <button id="ingles">
+                <img class="ing" src="./img/caracteristicas/ingles.svg" />
+              </button>
+              <button id="outrosidi">
+                <img class="outri" src="./img/caracteristicas/outrosidi.svg" />
+              </button>
+            </div>
 
-      <div class="filtro">
-        <div class="filt">
-
-          <h1>SELECIONE UMA CATEGORIA:</h1>
-          <div class="categorias">
-            <button id="clima" class="button cli">Clima</button>
-            <button id="culinaria" class="button cul">Culinária</button>
-            <button id="idioma" class="button idi">Idioma</button>
-            <button id="pontos" class="button pontos">Pontos Turísticos</button>
+            <div class="pont">
+              <h1>SELECIONE UM PONTO TURÍSTICO</h1>
+              <button id="cidade">
+                <img class="city" src="./img/caracteristicas/city.svg" />
+              </button>
+              <button id="floresta">
+                <img class="flores" src="./img/caracteristicas/floresta.svg" />
+              </button>
+              <button id="geleira">
+                <img class="gel" src="./img/caracteristicas/iceberg.svg" />
+              </button>
+              <button id="historico">
+                <img class="hist" src="./img/caracteristicas/museu.svg" />
+              </button>
+              <button id="montanha">
+                <img class="mont" src="./img/caracteristicas/montanha.svg" />
+              </button>
+              <button id="praia">
+                <img class="pra" src="./img/caracteristicas/praia.svg" />
+              </button>
+            </div>
           </div>
         </div>
-
-        <div class="carac">
-          <div class="c" >
-            <h1>SELECIONE UM CLIMA</h1>
-            <button id="equatorial"><img class="equa" src="./img/caracteristicas/equatorial.svg" /></button>
-            <button id="quente"><img class="que" src="./img/caracteristicas/quente.svg" /></button>
-            <button id="temperado"><img class="temp" src="./img/caracteristicas/temperado.svg" /></button>
-            <button id="tropical"><img class="trop" src="./img/caracteristicas/tropical.svg" /></button>
-            <button id="outros"><img class="outr" src="./img/caracteristicas/outros.svg" /></button>
-          </div>
-          <div class="culin">
-            <h1>SELECIONE UMA CULINÁRIA</h1>
-            <button id="caldo"><img class="cald" src="./img/caracteristicas/caldo.svg" /></button>
-            <button id="exotico"><img class="exo" src="./img/caracteristicas/exotico.svg" /></button>
-            <button id="massa"><img class="mas" src="./img/caracteristicas/massa.svg" /></button>
-            <button id="proteina"><img class="prot" src="./img/caracteristicas/proteinas.svg" /></button>
-            <button id="pratof"><img class="pf" src="./img/caracteristicas/PF.svg" /></button>
-            <button id="raizes"><img class="rai" src="./img/caracteristicas/raizes.svg" /></button>
-          </div>
-
-          <div class="idio">
-            <h1>SELECIONE UM IDIOMA</h1>
-            <button id="espanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
-            <button id="ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
-            <button id="outrosidi"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
-          </div>
-          
-          <div class="pont">
-            <h1>SELECIONE UM PONTO TURÍSTICO</h1>
-            <button id="cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
-            <button id="floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
-            <button id="geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>
-            <button id="historico"><img class="hist" src="./img/caracteristicas/museu.svg" /></button>
-            <button id="montanha"><img class="mont" src="./img/caracteristicas/montanha.svg" /></button>
-            <button id="praia"><img class="pra" src="./img/caracteristicas/praia.svg" /></button>
-          </div>
+      </div>
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <img id="kombi" src="./img/kombi.gif" alt="" />
+          <h1>Países</h1>
+          <h1>selecionados</h1>
+          <button id="iniciar" href="telas.css">Iniciar</button>
+          <button id="fechar">Escolher novamente</button>
         </div>
       </div>
-    </div>
-    <div class="modal-container" id="modal_container">
-      <div class="modal">
-        <img id="kombi" src="./img/kombi.gif" alt="">
-        <h1>Países</h1>
-        <h1>selecionados</h1>
-        <button id="iniciar">Iniciar</button>
-        <button id="fechar">Escolher novamente</button>
-      </div>
-  </div>
+    </main>
 
-  </main>
+    <footer class="footer">
+      <p>KMLY - 2021 ©</p>
+    </footer>
 
-  
+    <!-- main.js -->
+    <script src="main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src=" /datamaps.world.min.js "></script>
 
-  <footer class="footer">
-    <p>KMLY - 2021 ©</p>
-  </footer>
+    <script type="module">
+      import * as d3 from 'https://cdn.skypack.dev/d3@7'
 
-  <!-- main.js -->
-  <script src="main.js"></script>
+      const div = d3.selectAll('div')
+    </script>
 
-</body>
-
+    <script src="mapa.js"></script>
+  </body>
 </html>
