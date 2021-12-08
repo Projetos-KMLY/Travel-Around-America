@@ -297,6 +297,76 @@ nav .menu-lateral {
   background: var(--clean);
   color: black;
 }
+
+/*======= MODAL =======*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  background-color: white;
+  width: 28rem;
+  max-width: 100%;
+  padding: 0rem 2rem 2rem 2rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#kombi {
+  width: 10rem;
+}
+
+#iniciar {
+  height: 3rem;
+  background-color: var(--color-details);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  transition: background 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: var(--subtitle-font-size);  
+  border: none;
+  margin: 1.5rem;
+  cursor: pointer;
+  font-family: Poppins;
+  justify-content: center;
+  font-weight: bold;
+  width: 12rem;
+}
+
+#fechar {
+  border: none;
+  background: none;
+  font-family: Poppins;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 /*======= FOOTER =======*/
 .footer {
   display: block;
