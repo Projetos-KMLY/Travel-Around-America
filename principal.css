@@ -43,7 +43,7 @@ img {
 html {
   font: 400 1rem var(--font);
   color: var(--text-color);
-  background: linear-gradient(180deg, #008498, #03aac4);
+  background-color: #009AB1;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%;
@@ -68,7 +68,7 @@ g .title {
   z-index: 100;
   background-color: var(--base-color);
   width: 100%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
 /*======= LOGO =======*/
