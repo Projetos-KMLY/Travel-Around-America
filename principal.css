@@ -122,10 +122,13 @@ nav .menu-lateral {
   height: 85vh;
   margin-left: -2rem;
 }*/
-#america {
-  position: relative;
-  width: 30rem;
-  height: 42rem;
+svg {
+  position: absolute;
+  top: -2rem;
+}
+.country {
+  fill: #ccc;
+  stroke: #999;
 }
 
 .princ .filtro {
