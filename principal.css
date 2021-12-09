@@ -43,16 +43,14 @@ img {
 html {
   font: 400 1rem var(--font);
   color: var(--text-color);
-  background-color: #009AB1;
+  background-color: #009ab1;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%;
   background-attachment: fixed;
 }
 
-
 /*======= LAYOUT =======*/
-
 #header {
   border-bottom: 1px solid #0d8ea1;
   display: flex;
@@ -67,7 +65,6 @@ html {
 }
 
 /*======= LOGO =======*/
-
 nav .logo img {
   width: 9rem;
   float: left;
@@ -93,7 +90,6 @@ nav .menu-lateral {
 }
 
 /*======= PRINCIPAL =======*/
-
 .container {
   display: flex;
   align-items: center;
@@ -136,11 +132,10 @@ nav .menu-lateral {
 }
 
 .filtro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -152,7 +147,6 @@ nav .menu-lateral {
   background-color: var(--color-details) !important;
   color: var(--color-elements);
 }
-
 
 .buttonClicked2 {
   background-color: var(--color-details) !important;
@@ -171,7 +165,7 @@ nav .menu-lateral {
   transition: background 0.3s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  font-size: var(--subtitle-font-size);  
+  font-size: var(--subtitle-font-size);
   justify-content: center;
   border: none;
   margin-bottom: 1.5rem;
@@ -209,11 +203,19 @@ nav .menu-lateral {
   justify-content: center;
 }
 
-.equa, .que, .temp, .trop, .outr {
+.equa,
+.que,
+.temp,
+.trop,
+.outr {
   width: 2rem;
 }
 
-#equatorial, #quente, #temperado, #tropical, #outros {
+#equatorial,
+#quente,
+#temperado,
+#tropical,
+#outros {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -223,17 +225,30 @@ nav .menu-lateral {
   margin: 0 0.3rem 0 0.3rem;
 }
 
-#equatorial:hover, #quente:hover, #temperado:hover, #tropical:hover, #outros:hover {
+#equatorial:hover,
+#quente:hover,
+#temperado:hover,
+#tropical:hover,
+#outros:hover {
   background: var(--clean);
   color: black;
 }
-  
 
-.cald, .exo, .mas, .prot, .pf, .rai {
+.cald,
+.exo,
+.mas,
+.prot,
+.pf,
+.rai {
   width: 2rem;
 }
 
-#caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+#caldo,
+#exotico,
+#massa,
+#proteina,
+#pratof,
+#raizes {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -243,16 +258,25 @@ nav .menu-lateral {
   margin: 0 0.3rem 0 0.3rem;
 }
 
-#caldo:hover, #exotico:hover,  #massa:hover, #proteina:hover, #pratof:hover, #raizes:hover {
+#caldo:hover,
+#exotico:hover,
+#massa:hover,
+#proteina:hover,
+#pratof:hover,
+#raizes:hover {
   background: var(--clean);
   color: black;
 }
-  
-.esp, .ing, .outri {
+
+.esp,
+.ing,
+.outri {
   width: 2rem;
 }
 
-#ingles, #espanhol, #outrosidi {
+#ingles,
+#espanhol,
+#outrosidi {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -262,16 +286,28 @@ nav .menu-lateral {
   margin: 0 0.3rem 0 0.3rem;
 }
 
-#ingles:hover, #espanhol:hover,  #outrosidi:hover {
+#ingles:hover,
+#espanhol:hover,
+#outrosidi:hover {
   background: var(--clean);
   color: black;
-} 
+}
 
-.city, .flores, .gel, .hist, .mont, .pra {
+.city,
+.flores,
+.gel,
+.hist,
+.mont,
+.pra {
   width: 2rem;
 }
 
-#cidade, #floresta, #geleira, #historico, #montanha, #praia {
+#cidade,
+#floresta,
+#geleira,
+#historico,
+#montanha,
+#praia {
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -281,13 +317,17 @@ nav .menu-lateral {
   margin: 0 0.3rem 0 0.3rem;
 }
 
-#cidade:hover, #floresta:hover,  #geleira:hover, #historico:hover, #montanha:hover, #praia:hover {
+#cidade:hover,
+#floresta:hover,
+#geleira:hover,
+#historico:hover,
+#montanha:hover,
+#praia:hover {
   background: var(--clean);
   color: black;
 }
 
 /*======= MODAL =======*/
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -310,7 +350,7 @@ nav .menu-lateral {
   border-radius: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,7 +376,7 @@ nav .menu-lateral {
   transition: background 0.3s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  font-size: var(--subtitle-font-size);  
+  font-size: var(--subtitle-font-size);
   border: none;
   margin: 1.5rem;
   cursor: pointer;
@@ -372,13 +412,14 @@ nav .menu-lateral {
   transform: rotate(-0.01deg);
 }
 
-/*========== RESPONSIVO ==========*/
+/*==========
+  RESPONSIVO
+  ==========*/
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
-  
   .america {
-    width: 25rem;
-    height: 50vh;
+    width: 22rem;
+    height: 60vh;
   }
 
   .filtro h1 {
@@ -393,7 +434,6 @@ nav .menu-lateral {
     width: 12rem;
   }
 
-
   .filtro {
     margin: 0;
   }
@@ -402,15 +442,12 @@ nav .menu-lateral {
     width: 1.5rem;
   }
 
-
   .carac {
     margin: 0 1.5rem 2rem 1.5rem;
   }
 }
 
-
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-
   .filtro {
     margin: 0;
   }
@@ -425,7 +462,6 @@ nav .menu-lateral {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
-
   .filtro h1 {
     font-size: 1.5rem;
   }
@@ -452,7 +488,6 @@ nav .menu-lateral {
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
-
   .filtro h1 {
     font-size: 2rem;
   }
@@ -472,29 +507,44 @@ nav .menu-lateral {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 3rem;
     height: 3rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 3rem;
     height: 3rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 3rem;
     height: 3rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 3rem;
     height: 3rem;
   }
 }
 
 @media only screen and (min-width: 1700px) and (max-width: 1800px) {
-
   .filtro h1 {
     font-size: 2.2rem;
   }
@@ -514,29 +564,44 @@ nav .menu-lateral {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 3.5rem;
     height: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 1800px) and (max-width: 1900px) {
-
   .filtro h1 {
     font-size: 2.5rem;
   }
@@ -556,29 +621,44 @@ nav .menu-lateral {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 4rem;
     height: 4rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 4rem;
     height: 4rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 4rem;
     height: 4rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 4rem;
     height: 4rem;
   }
 }
 
 @media only screen and (min-width: 1900px) and (max-width: 2000px) {
-
   .filtro h1 {
     font-size: 2.8rem;
   }
@@ -598,24 +678,39 @@ nav .menu-lateral {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 4.5rem;
     height: 4.5rem;
   }
 }
-
