@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-
 <head>
   <!-- PAGE INFO -->
   <meta charset="UTF-8" />
@@ -24,7 +23,7 @@
 
 <body>
   <header id="header">
-    <nav class="container">
+    <nav>
       <!-- /menu -->
       <img class="menu-lateral" src="img/menu.png" />
 
@@ -35,21 +34,13 @@
   </header>
 
   <main class="container">
-
-    <div class="princ">
-      <!-- MAPA -->
-
-
       <div class="mapa">
-        <img class="america" src="img/continente.png"/>
-        
+        <img class="america" src="img/mapacontinente.gif"/>
       </div>
 
       <!-- FILTRO -->
 
       <div class="filtro">
-        <div class="filt">
-
           <h1>SELECIONE UMA CATEGORIA:</h1>
           <div class="categorias">
             <button id="clima" class="button cli">Clima</button>
@@ -57,11 +48,10 @@
             <button id="idioma" class="button idi">Idioma</button>
             <button id="pontos" class="button pontos">Pontos Turísticos</button>
           </div>
-        </div>
 
         <div class="carac">
           <div class="c" >
-            <h1>SELECIONE UM CLIMA</h1>
+            <h2>SELECIONE UM CLIMA</h2>
             <button id="equatorial"><img class="equa" src="./img/caracteristicas/equatorial.svg" /></button>
             <button id="quente"><img class="que" src="./img/caracteristicas/quente.svg" /></button>
             <button id="temperado"><img class="temp" src="./img/caracteristicas/temperado.svg" /></button>
@@ -69,7 +59,7 @@
             <button id="outros"><img class="outr" src="./img/caracteristicas/outros.svg" /></button>
           </div>
           <div class="culin">
-            <h1>SELECIONE UMA CULINÁRIA</h1>
+            <h2>SELECIONE UMA CULINÁRIA</h2>
             <button id="caldo"><img class="cald" src="./img/caracteristicas/caldo.svg" /></button>
             <button id="exotico"><img class="exo" src="./img/caracteristicas/exotico.svg" /></button>
             <button id="massa"><img class="mas" src="./img/caracteristicas/massa.svg" /></button>
@@ -79,14 +69,14 @@
           </div>
 
           <div class="idio">
-            <h1>SELECIONE UM IDIOMA</h1>
+            <h2>SELECIONE UM IDIOMA</h2>
             <button id="espanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
             <button id="ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
             <button id="outrosidi"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
           </div>
           
           <div class="pont">
-            <h1>SELECIONE UM PONTO TURÍSTICO</h1>
+            <h2>SELECIONE UM PONTO TURÍSTICO</h2>
             <button id="cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
             <button id="floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
             <button id="geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>
@@ -102,11 +92,10 @@
         <img id="kombi" src="./img/kombi.gif" alt="">
         <h1>Países</h1>
         <h1>selecionados</h1>
-        <button id="iniciar">Iniciar</button>
+        <a id="iniciar" href="telas.html">Iniciar</a>
         <button id="fechar">Escolher novamente</button>
       </div>
   </div>
-
   </main>
 
   
@@ -117,6 +106,8 @@
 
   <!-- main.js -->
   <script src="main.js"></script>
+
+  
 
 </body>
 
