@@ -17,45 +17,8 @@ for (const link of links) {
   })
 }
 
-/*----MAPA AMERICA-----*/
+/* esconder caracteristicas */
 
-<<<<<<< HEAD
-const width = 900
-const height = 600
-
-const svg = d3
-  .select('body')
-  .append('svg')
-  .attr('width', width)
-  .attr('height', height)
-
-const projection = d3
-  .geoMercator()
-  .scale(140)
-  .translate([width / 2, height / 1.4])
-const path = d3.geoPath(projection)
-
-const g = svg.append('g')
-
-d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(
-  data => {
-    const countries = topojson.feature(data, data.objects.countries)
-    g.selectAll('path')
-      .data(countries.features)
-      .enter()
-      .append('path')
-      .attr('class', 'country')
-      .attr('d', path)
-  }
-)
-
-/*
-const itens_caracteristica = querySelectorAll(".item-caracteristica") 
-itens_caracteristica.addEventListener('click', function (event){})
-*/
-
-=======
->>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
 var c = document.querySelector('.c')
 var culin = document.querySelector('.culin')
 var idio = document.querySelector('.idio')
