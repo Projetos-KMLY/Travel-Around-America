@@ -43,18 +43,13 @@ img {
 html {
   font: 400 1rem var(--font);
   color: var(--text-color);
-  background: linear-gradient(180deg, #008498, #03aac4);
+  background-color: #009AB1;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%;
   background-attachment: fixed;
 }
 
-g .title {
-  font: 500 var(--font);
-  color: var(--clean);
-  -webkit-font-smoothing: auto;
-}
 
 /*======= LAYOUT =======*/
 
@@ -68,7 +63,7 @@ g .title {
   z-index: 100;
   background-color: var(--base-color);
   width: 100%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
 /*======= LOGO =======*/
@@ -99,16 +94,17 @@ nav .menu-lateral {
 
 /*======= PRINCIPAL =======*/
 
-.princ {
+.container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   margin: 1rem 0 0 0;
 }
 
+<<<<<<< HEAD
 .princ .mapa {
   flex: 1 1 16rem;
   padding: 0px 10px;
@@ -119,6 +115,10 @@ nav .menu-lateral {
 
 /*.america {
   width: 100%;
+=======
+.america {
+  width: 32rem;
+>>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
   height: 85vh;
   margin-left: -2rem;
 }*/
@@ -131,32 +131,48 @@ svg {
   stroke: #999;
 }
 
-.princ .filtro {
-  flex: 1 1 16rem;
-  padding: 0px 20px;
+.filtro {
+  margin: 0 0 0 -15rem;
   text-align: center;
 }
-.princ .filtro .filt {
-  align-items: center;
-  justify-content: center;
-}
 
-.princ h1 {
+.filtro h1 {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 .categorias {
   display: flex;
   flex-direction: column;
   padding: 0.2rem 7rem;
 }
 
+=======
+.filtro h2 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 1.5rem;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+>>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
 .button:hover {
   background-color: var(--clean);
   color: black;
@@ -173,11 +189,13 @@ svg {
 }
 
 .categorias > button {
+  font-family: Poppins;
   height: 3rem;
   background-color: var(--color-elements);
   color: black;
   display: flex;
   align-items: center;
+  width: 17rem;
   padding: 0 2rem;
   transition: background 0.3s;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -197,13 +215,6 @@ svg {
   border-radius: 60rem;
   cursor: pointer;
   margin: 0 0.3rem 0 0.3rem;
-}
-
-.princ .filtro a {
-  height: 3.4rem;
-  width: 60%;
-  margin: 1rem;
-  text-align: center;
 }
 
 .c {
@@ -434,84 +445,255 @@ svg {
 
   font-size: 0.8rem;
   text-transform: none;
+  margin-top: -1rem;
 
   transform: rotate(-0.01deg);
 }
 
 /*========== RESPONSIVO ==========*/
-@media (min-width: 1200px) {
-  /* reusable classes */
-  .container {
-    max-width: 1090px;
-    margin-left: auto;
-    margin-right: auto;
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  
+  .america {
+    width: 25rem;
+    height: 50vh;
+  }
+
+  .filtro h1 {
+    font-size: 1.3rem;
+  }
+
+  .filtro h2 {
+    font-size: 1.3rem;
+  }
+
+  .categorias > button {
+    width: 12rem;
+  }
+
+
+  .filtro {
+    margin: 0;
   }
 
   .button {
-    height: 3.125rem;
+    width: 1.5rem;
   }
 
-  /* navegação */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
 
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
+  .carac {
+    margin: 0 1.5rem 2rem 1.5rem;
   }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: none;
-  }
-
-  /* layout */
 }
 
-@media (min-width: 992px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size: 1.125rem;
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+
+  .filtro {
+    margin: 0;
+  }
+
+  .categorias > button {
+    width: 15rem;
+  }
+
+  .carac {
+    margin-bottom: 2rem;
   }
 }
-@media screen and (min-width: 600px) {
-  .r-footer > * {
-    flex: 1;
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+
+  .filtro h1 {
+    font-size: 1.5rem;
   }
 
-  .footer .logo-final .nome {
-    padding-right: 2rem;
+  .filtro h2 {
+    font-size: 1.5rem;
   }
 
-  .footer .text-footer {
-    text-align: left;
+  .container {
+    flex-direction: column;
   }
 
-  .features {
-    flex-grow: 2;
+  .categorias > button {
+    width: 18rem;
   }
 
-  .l-footer {
-    flex: 1 0px;
+  .filtro {
+    margin: 0;
   }
 
-  .r-footer {
-    flex: 2 0px;
-  }
-  .r-footer .boxx {
-    text-align: right;
-    padding-top: 0rem;
+  .carac {
+    margin-bottom: 2rem;
   }
 }
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+
+  .filtro h1 {
+    font-size: 2rem;
+  }
+
+  .filtro h2 {
+    font-size: 2rem;
+  }
+
+  .america {
+    width: 40rem;
+  }
+  .categorias > button {
+    width: 20rem;
+  }
+
+  .footer p {
+    margin-top: 0.8rem;
+  }
+
+  #equatorial, #quente, #temperado, #tropical, #outros {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #espanhol, #ingles, #outrosidi {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1800px) {
+
+  .filtro h1 {
+    font-size: 2.2rem;
+  }
+
+  .filtro h2 {
+    font-size: 2.2rem;
+  }
+
+  .america {
+    width: 43rem;
+  }
+  .categorias > button {
+    width: 24rem;
+  }
+
+  .footer p {
+    margin-top: 0.8rem;
+  }
+
+  #equatorial, #quente, #temperado, #tropical, #outros {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #espanhol, #ingles, #outrosidi {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 1900px) {
+
+  .filtro h1 {
+    font-size: 2.5rem;
+  }
+
+  .filtro h2 {
+    font-size: 2.5rem;
+  }
+
+  .america {
+    width: 48rem;
+  }
+  .categorias > button {
+    width: 27rem;
+  }
+
+  .footer p {
+    margin-top: 0.8rem;
+  }
+
+  #equatorial, #quente, #temperado, #tropical, #outros {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #espanhol, #ingles, #outrosidi {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2000px) {
+
+  .filtro h1 {
+    font-size: 2.8rem;
+  }
+
+  .filtro h2 {
+    font-size: 2.8rem;
+  }
+
+  .america {
+    width: 48rem;
+  }
+  .categorias > button {
+    width: 27rem;
+  }
+
+  .footer p {
+    margin-top: 0.8rem;
+  }
+
+  #equatorial, #quente, #temperado, #tropical, #outros {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #espanhol, #ingles, #outrosidi {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+

@@ -33,12 +33,9 @@ nav {
 
 header {
     border-bottom: 1px solid #0d8ea1;
-    margin-bottom: 2rem;
     display: flex;
     height: 4rem;
     align-items: center;
-  
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -51,7 +48,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0 0 0;
+    margin: 0.8rem 0 0 0;
 }
 
 div#imgFinal img {
@@ -119,7 +116,7 @@ input:hover {
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .container {
         flex-direction: column;
-        margin: 0 2rem 0 2rem;
+        margin: -4rem 2rem 0 2rem;
     }
 
     #textoFinal {
@@ -149,8 +146,13 @@ input:hover {
 @media only screen and (min-width: 500px) and (max-width: 700px) {
     .container {
         flex-direction: column;
-        margin: 0 2rem 0 2rem;
+        margin: -4rem 2rem 0 2rem;
         
+    }
+
+    div#imgFinal img {
+        width: 20rem;
+
     }
 
     #textoFinal {
@@ -179,7 +181,6 @@ input:hover {
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
     .container {
         flex-direction: column;
-        margin: 4rem 2rem 0 2rem;
         
     }
 
@@ -203,6 +204,8 @@ input:hover {
         align-items: center;
         justify-content: center;
         margin:0;
+        height: 50vh;
+
     }
 }
 

@@ -19,6 +19,7 @@ for (const link of links) {
 
 /*----MAPA AMERICA-----*/
 
+<<<<<<< HEAD
 const width = 900
 const height = 600
 
@@ -53,6 +54,8 @@ const itens_caracteristica = querySelectorAll(".item-caracteristica")
 itens_caracteristica.addEventListener('click', function (event){})
 */
 
+=======
+>>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
 var c = document.querySelector('.c')
 var culin = document.querySelector('.culin')
 var idio = document.querySelector('.idio')
