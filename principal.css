@@ -43,13 +43,12 @@ img {
 html {
   font: 400 1rem var(--font);
   color: var(--text-color);
-  background-color: #009AB1;
+  background-color: #009ab1;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%;
   background-attachment: fixed;
 }
-
 
 /*======= LAYOUT =======*/
 
@@ -104,7 +103,6 @@ nav .menu-lateral {
   margin: 1rem 0 0 0;
 }
 
-<<<<<<< HEAD
 .princ .mapa {
   flex: 1 1 16rem;
   padding: 0px 10px;
@@ -118,7 +116,7 @@ nav .menu-lateral {
 =======
 .america {
   width: 32rem;
->>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
+
   height: 85vh;
   margin-left: -2rem;
 }*/
@@ -146,14 +144,12 @@ svg {
   margin-bottom: 1.5rem;
 }
 
-<<<<<<< HEAD
 .categorias {
   display: flex;
   flex-direction: column;
   padding: 0.2rem 7rem;
 }
 
-=======
 .filtro h2 {
   color: #ffffff;
   font-style: normal;
@@ -165,14 +161,12 @@ svg {
 }
 
 .filtro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
->>>>>>> d74c9ae5ead827d2a145778e85349cb550c3dfed
 .button:hover {
   background-color: var(--clean);
   color: black;
@@ -453,7 +447,6 @@ svg {
 /*========== RESPONSIVO ==========*/
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
-  
   .america {
     width: 25rem;
     height: 50vh;
@@ -471,7 +464,6 @@ svg {
     width: 12rem;
   }
 
-
   .filtro {
     margin: 0;
   }
@@ -480,15 +472,12 @@ svg {
     width: 1.5rem;
   }
 
-
   .carac {
     margin: 0 1.5rem 2rem 1.5rem;
   }
 }
 
-
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-
   .filtro {
     margin: 0;
   }
@@ -503,7 +492,6 @@ svg {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
-
   .filtro h1 {
     font-size: 1.5rem;
   }
@@ -530,7 +518,6 @@ svg {
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
-
   .filtro h1 {
     font-size: 2rem;
   }
@@ -550,29 +537,44 @@ svg {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 3rem;
     height: 3rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 3rem;
     height: 3rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 3rem;
     height: 3rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 3rem;
     height: 3rem;
   }
 }
 
 @media only screen and (min-width: 1700px) and (max-width: 1800px) {
-
   .filtro h1 {
     font-size: 2.2rem;
   }
@@ -592,29 +594,44 @@ svg {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 3.5rem;
     height: 3.5rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 3.5rem;
     height: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 1800px) and (max-width: 1900px) {
-
   .filtro h1 {
     font-size: 2.5rem;
   }
@@ -634,29 +651,44 @@ svg {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 4rem;
     height: 4rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 4rem;
     height: 4rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 4rem;
     height: 4rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 4rem;
     height: 4rem;
   }
 }
 
 @media only screen and (min-width: 1900px) and (max-width: 2000px) {
-
   .filtro h1 {
     font-size: 2.8rem;
   }
@@ -676,24 +708,39 @@ svg {
     margin-top: 0.8rem;
   }
 
-  #equatorial, #quente, #temperado, #tropical, #outros {
+  #equatorial,
+  #quente,
+  #temperado,
+  #tropical,
+  #outros {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #caldo, #exotico, #massa, #proteina, #pratof, #raizes {
+  #caldo,
+  #exotico,
+  #massa,
+  #proteina,
+  #pratof,
+  #raizes {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #espanhol, #ingles, #outrosidi {
+  #espanhol,
+  #ingles,
+  #outrosidi {
     width: 4.5rem;
     height: 4.5rem;
   }
 
-  #cidade, #floresta, #geleira, #historico, #montanha, #praia {
+  #cidade,
+  #floresta,
+  #geleira,
+  #historico,
+  #montanha,
+  #praia {
     width: 4.5rem;
     height: 4.5rem;
   }
 }
-
