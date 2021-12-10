@@ -1,22 +1,14 @@
-/*  abrir menu lateral */
-const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
+const icon = document.getElementById('icon');
+let nav = document.getElementById ('nav');
 
-for (const element of toggle) {
-  element.addEventListener('click', function () {
-    nav.classList.toggle('show')
-  })
-}
-
-/* selecionar opções menu */
-const links = document.querySelectorAll('nav ul li a')
-
-for (const link of links) {
-  link.addEventListener('click', function () {
-    nav.classList.remove('show')
-  })
-}
-
+icon.addEventListener('click', () => {
+    if(nav.style.left === '0rem') {
+        nav.style.left = '-21rem';
+    }
+    else {
+        nav.style.left = '0rem';
+    }
+})
 /* esconder caracteristicas */
 
 var c = document.querySelector('.c')
