@@ -148,7 +148,7 @@ const open5 = document.getElementById('outros')
 const open6 = document.getElementById('caldo')
 const open7 = document.getElementById('exotico')
 const open8 = document.getElementById('massa')
-const open9 = document.getElementById('proteina')
+const open9 = document.getElementById('proteina') 
 const open10 = document.getElementById('pratof')
 const open11 = document.getElementById('raizes')
 
