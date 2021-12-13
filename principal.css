@@ -74,7 +74,7 @@ body {
 }
 
 /*======= LOGO =======*/
-.ah{
+.ah {
   font-family: Poppins;
   text-align: left;
   padding: 1.5rem 2rem;
@@ -85,7 +85,7 @@ body {
   color: white;
 }
 
-.ah:hover{
+.ah:hover {
   background-color: var(--color-details);
   transition: 0.5s;
 }
@@ -100,7 +100,7 @@ ul {
   list-style: none;
 }
 
-label img{
+label img {
   position: absolute;
   display: flex;
   align-items: center;
@@ -108,7 +108,6 @@ label img{
   margin-top: -0.9rem;
   margin-left: 2rem;
   width: 1.8rem;
-
 
   z-index: 1;
   cursor: pointer;

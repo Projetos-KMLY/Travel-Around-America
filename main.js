@@ -1,13 +1,12 @@
-const icon = document.getElementById('icon');
-let nav = document.getElementById ('nav');
+const icon = document.getElementById('icon')
+let nav = document.getElementById('nav')
 
 icon.addEventListener('click', () => {
-    if(nav.style.left === '0rem') {
-        nav.style.left = '-21rem';
-    }
-    else {
-        nav.style.left = '0rem';
-    }
+  if (nav.style.left === '0rem') {
+    nav.style.left = '-21rem'
+  } else {
+    nav.style.left = '0rem'
+  }
 })
 /* esconder caracteristicas */
 
@@ -148,7 +147,7 @@ const open5 = document.getElementById('outros')
 const open6 = document.getElementById('caldo')
 const open7 = document.getElementById('exotico')
 const open8 = document.getElementById('massa')
-const open9 = document.getElementById('proteina') 
+const open9 = document.getElementById('proteina')
 const open10 = document.getElementById('pratof')
 const open11 = document.getElementById('raizes')
 
@@ -165,88 +164,147 @@ const open20 = document.getElementById('praia')
 const modal_container = document.getElementById('modal_container')
 const close = document.getElementById('fechar')
 
+var escolha = 0
+
 close.addEventListener('click', () => {
   modal_container.classList.remove('show')
 })
 
 open.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 3
+  document.getElementById('escolha').value = escolha
 })
 
 open2.addEventListener('click', () => {
   modal_container.classList.add('show')
+  var escolha = 4
+  document.getElementById('escolha').value = escolha
 })
 
 open3.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 2
+  document.getElementById('escolha').value = escolha
 })
 
 open4.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 1
+  document.getElementById('escolha').value = escolha
 })
 
 open5.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 5
+  document.getElementById('escolha').value = escolha
 })
 
 open6.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 11
+  document.getElementById('escolha').value = escolha
 })
 
 open7.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 10
+  document.getElementById('escolha').value = escolha
 })
 
 open8.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 8
+  document.getElementById('escolha').value = escolha
 })
 
 open9.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 6
+  document.getElementById('escolha').value = escolha
 })
 
 open10.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 7
+  document.getElementById('escolha').value = escolha
 })
 
 open11.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 9
+  document.getElementById('escolha').value = escolha
 })
 
 open12.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 12
+  document.getElementById('escolha').value = escolha
 })
 
 open13.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 13
+  document.getElementById('escolha').value = escolha
 })
 
 open14.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 14
+  document.getElementById('escolha').value = escolha
 })
 
 open15.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 18
+  document.getElementById('escolha').value = escolha
 })
 
 open16.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 17
+  document.getElementById('escolha').value = escolha
 })
 
 open17.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 20
+  document.getElementById('escolha').value = escolha
 })
 
 open18.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 19
+  document.getElementById('escolha').value = escolha
 })
 
 open19.addEventListener('click', () => {
   modal_container.classList.add('show')
+
+  var escolha = 16
+  document.getElementById('escolha').value = escolha
 })
 
 open20.addEventListener('click', () => {
   modal_container.classList.add('show')
-})
 
-/* botoes */
+  var escolha = 15
+  document.getElementById('escolha').value = escolha
+})
