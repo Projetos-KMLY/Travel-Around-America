@@ -68,37 +68,37 @@ endif;
         <div class="carac">
           <div  class="c" >
             <h2>SELECIONE UM CLIMA</h2>
-            <button id="equatorial" type="submit" name="equatorial" value="3" ><img class="equa" src="./img/caracteristicas/equatorial.svg" /></button>
-            <button id="quente" type="submit" name="quente" value="4"><img  class="que" src="./img/caracteristicas/quente.svg" /></button>
-            <button id="temperado" type="submit" name="temperado" value="2"><img class="temp" src="./img/caracteristicas/temperado.svg" /></button>
-            <button id="tropical" type="submit" name="tropical"><img class="trop" src="./img/caracteristicas/tropical.svg" /></button>
-            <button id="outros" type="submit" name="outros"><img class="outr" src="./img/caracteristicas/outros.svg" /></button>
+            <button id="equatorial" type="submit" name="equatorial"  title="Equatorial" ><img class="equa" src="./img/caracteristicas/equatorial.svg" /></button>
+            <button id="quente" type="submit" name="quente"  title="Quente"><img  class="que" src="./img/caracteristicas/quente.svg" /></button>
+            <button id="temperado" type="submit" name="temperado"  title="Temperado"><img class="temp" src="./img/caracteristicas/temperado.svg" /></button>
+            <button id="tropical" type="submit" name="tropical" title="Tropical"><img class="trop" src="./img/caracteristicas/tropical.svg" /></button>
+            <button id="outros" type="submit" name="outros" title="Outros"><img class="outr" src="./img/caracteristicas/outros.svg" /></button>
 </div>
           <div class="culin">
             <h2>SELECIONE UMA CULINÁRIA</h2>
-            <button id="caldo" type="submit" name="caldo"><img class="cald" src="./img/caracteristicas/caldo.svg" /></button>
-            <button id="exotico" name="exotico"><img class="exo" src="./img/caracteristicas/exotico.svg" /></button>
-            <button id="massa" type="submit" name="massa"><img class="mas" src="./img/caracteristicas/massa.svg" /></button>
-            <button id="proteina" type="submit" name="proteina"><img class="prot" src="./img/caracteristicas/proteinas.svg" /></button>
-            <button id="pratof" type="submit" name="pratof"><img class="pf" src="./img/caracteristicas/PF.svg" /></button>
-            <button id="raizes" type="submit" name="raizes"><img class="rai" src="./img/caracteristicas/raizes.svg" /></button>
+            <button id="caldo" type="submit" name="caldo" title="Caldo"><img class="cald" src="./img/caracteristicas/caldo.svg" /></button>
+            <button id="exotico" name="exotico" title="Exótico"><img class="exo" src="./img/caracteristicas/exotico.svg" /></button>
+            <button id="massa" type="submit" name="massa" title="Massa"><img class="mas" src="./img/caracteristicas/massa.svg" /></button>
+            <button id="proteina" type="submit" name="proteina" title="Proteína"><img class="prot" src="./img/caracteristicas/proteinas.svg" /></button>
+            <button id="pratof" type="submit" name="pratof" title="Prato feito"><img class="pf" src="./img/caracteristicas/PF.svg" /></button>
+            <button id="raizes" type="submit" name="raizes" title="Raízes"><img class="rai" src="./img/caracteristicas/raizes.svg" /></button>
           </div>
 
           <div class="idio">
             <h2>SELECIONE UM IDIOMA</h2>
-            <button id="espanhol" type="submit" name="espanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
-            <button id="ingles" type="submit" name="ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
-            <button id="outrosidi" type="submit" name="outrosidi"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
+            <button id="espanhol" type="submit" name="espanhol" title="Epanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
+            <button id="ingles" type="submit" name="ingles" title="Ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
+            <button id="outrosidi" type="submit" name="outrosidi" title="Outros"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
           </div>
           
           <div class="pont">
             <h2>SELECIONE UM PONTO TURÍSTICO</h2>
-            <button id="cidade" type="submit" name="cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
-            <button id="floresta" type="submit" name="floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
-            <button id="geleira" type="submit" name="geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>
-            <button id="historico" type="submit" name="historico"><img class="hist" src="./img/caracteristicas/museu.svg" /></button>
-            <button id="montanha" type="submit" name="montanha"><img class="mont" src="./img/caracteristicas/montanha.svg" /></button>
-            <button id="praia" type="submit" name="praia"><img class="pra" src="./img/caracteristicas/praia.svg" /></button>
+            <button id="cidade" type="submit" name="cidade" title="Cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
+            <button id="floresta" type="submit" name="floresta" title="Floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
+            <button id="geleira" type="submit" name="geleira" title="Geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>
+            <button id="historico" type="submit" name="historico" title="Histórico"><img class="hist" src="./img/caracteristicas/museu.svg" /></button>
+            <button id="montanha" type="submit" name="montanha" title="Montanha"><img class="mont" src="./img/caracteristicas/montanha.svg" /></button>
+            <button id="praia" type="submit" name="praia" title="Praia"><img class="pra" src="./img/caracteristicas/praia.svg" /></button>
           </div>
         </div>
       </div>
