@@ -39,21 +39,28 @@ endif;
 
 </head>
 
-<body>
+<body >
 
     <main>
-        
-    <div class="modal-container">
-    <div class="card">
-  <div class="products">
+       
+     
+    <div class="modal-containerr">
+    <div class="cardd">
+  <div class="productss">
 
   <div class="product active" product-id="0">
+    
+
+    <div class="modal-container">
+    <div class="card">
     <h1 class="tutorial">Clique na seta</h1>
+
+    </div>
+   </div>
 </div>
 
             <?php
             $escolha= $_GET['escolha'];
-           
 
             $categoria = "SELECT * FROM referencia WHERE Id_categoria = '$escolha'";
             $getpaisesquery = mysqli_query($conexao,$categoria);
@@ -61,55 +68,91 @@ endif;
             
                 while($getpaisesfiltrados = mysqli_fetch_array($getpaisesquery)){
                     $paises = $getpaisesfiltrados['Id_pais'];
-                    // echo "<center>$paises</center>";
 
                     // Aparecer caracteristicas
 
                     $sql = "SELECT * FROM pais WHERE Id_pais = '$paises'";
                     $sth = $conexao->query($sql);
                     $result=mysqli_fetch_array($sth);
-                    // echo $result['text1'];
+  
                     ?>
 
+    <div class="product " product-id="1" >
+    <?php   echo '<img class="imgfundo" src="data:image/jpeg;base64,'.base64_encode( $result['fundo'] ).'"/>'; ?>
 
-    <div class="product " product-id="1">
+    <div class="modal-container">
+    <div class="card">
+      
     <h1 class="description"> <?php echo $result['text1']; ?></h1>
 
-    <div class="thumbnail">
+    <div class="thumbnail" >
       <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img1'] ).'"/>'; ?>
+      </div>
+      
+      
     </div>
-    </div>
+   </div>
+  </div>
 
     <div class="product " product-id="2"  >
+    <?php   echo '<img class="imgfundo" src="data:image/jpeg;base64,'.base64_encode( $result['fundo'] ).'"/>'; ?>
+
+    <div class="modal-container">
+    <div class="card">
     <h1 class="description"> <?php echo $result['text2']; ?></h1>
 
-<div class="thumbnail">
-  <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img2'] ).'"/>'; ?>
+    <div class="thumbnail" >
+      <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img2'] ).'"/>'; ?>
+      </div>
+
+      
     </div>
+   </div>
     </div>
 
     <div class="product" product-id="3">
-    <h1 class="description"> <?php echo $result['text3']; ?></h1>
+    <?php   echo '<img class="imgfundo" src="data:image/jpeg;base64,'.base64_encode( $result['fundo'] ).'"/>'; ?>
 
-    <div class="thumbnail">
-      <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img3'] ).'"/>'; ?>
-    </div>
+<div class="modal-container">
+<div class="card">
+<h1 class="description"> <?php echo $result['text3']; ?></h1>
+
+<div class="thumbnail" >
+  <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img3'] ).'"/>'; ?>
+  </div>
+</div>
+</div>
     </div>
 
     <div class="product" product-id="4" >
-    <h1 class="description"> <?php echo $result['text4']; ?></h1>
+    <?php   echo '<img class="imgfundo" src="data:image/jpeg;base64,'.base64_encode( $result['fundo'] ).'"/>'; ?>
 
-    <div class="thumbnail">
-      <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img4'] ).'"/>'; ?>
-    </div>
+<div class="modal-container">
+<div class="card">
+<h1 class="description"> <?php echo $result['text4']; ?></h1>
+
+<div class="thumbnail" >
+  <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img4'] ).'"/>'; ?>
+  </div>
+</div>
+</div>
     </div>
 
     <div class="product" product-id="5" >
-    <h1 class="description"> <?php echo $result['text5']; ?></h1>
+    <?php   echo '<img class="imgfundo" src="data:image/jpeg;base64,'.base64_encode( $result['fundo'] ).'"/>'; ?>
 
-    <div class="thumbnail">
-      <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img5'] ).'"/>'; ?>
-    </div>
+<div class="modal-container">
+<div class="card">
+<h1 class="description"> <?php echo $result['text5']; ?></h1>
+
+<div class="thumbnail" >
+  <?php   echo '<img class="imgcarac" src="data:image/jpeg;base64,'.base64_encode( $result['img5'] ).'"/>'; ?>
+  </div>
+
+</div>
+
+
+</div>
     </div>
     
 <?php
@@ -119,14 +162,14 @@ endif;
 
 </div>
 <div class="opi">
-              
-        </div>
-        <div class="pular">
+<div class="pular">
             <a id="prev" ripple="" class="btn"><img class="dire" src="./img/esquerda.png" /></a>
             <button id="coracao"><img class="core" src="./img/coracao.png" /></button>
             <button id="dislike"><img class="like" src="./img/dislike.png" /></button>
             <a id="next" ripple="" class="btn"><img class="esquer" src="./img/direita.png" /></a>
         </div> 
+       
+        </div>
               </div>
 
 

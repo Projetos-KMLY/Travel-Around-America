@@ -43,27 +43,19 @@ nav .logo img {
 /*======= NAVEGAÇÂO =======*/
 
 /*======= MODAL =======*/
+
 body {
-  background-image: url(./img/paises-background/Brasil.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: white;
   min-width: 100vw;
   min-height: 100vh;
-
-  color: rgba(0, 0, 0, 0.6);
   line-height: 1.6em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
 .products {
   position: relative;
   overflow: hidden;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
   width: 100%;
 }
 
@@ -88,6 +80,7 @@ body {
 .imgcarac {
   border-radius: 6%;
 }
+
 .tutorial {
   text-align: center;
   font-weight: 500;
@@ -113,6 +106,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.imgfundo {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }
 
 .footer {
@@ -221,8 +220,21 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
-  justify-content: space-between;
+
+  background: #ffffff;
+  width: 25rem;
+  height: 15vh;
+  border-radius: 12px;
+}
+.opi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 35%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 #proximo {
