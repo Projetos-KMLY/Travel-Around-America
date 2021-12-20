@@ -1,3 +1,4 @@
+
 <?php
 require_once 'conecta.php';
 
@@ -35,6 +36,17 @@ endif;
 
 <body>
   <header id="header">
+
+      <label> <img id="icon" src="./img/menu.png" /> </label> 
+      <nav id = "nav">
+          <ul> 
+            <img id="pessoa" src="./img/pessoa.png">
+              <li><a class ="ah" href="">Meu perfil</a></li>
+              <li><a class ="ah" href="index.html">Início</a></li>
+              <li><a class ="ah" href="index.html">Sair</a></li>
+          </ul>
+      </nav>
+      <a> <img class="logo" src="img/logo2.svg" href="index.html"> </a>
     <label><img id="icon" src="img/menu.png" /> </label>
     <a class="logo" href="index.html">
      <img src="img/logo2.svg" alt="logo Travel Around America" />
@@ -86,6 +98,9 @@ endif;
 
           <div class="idio">
             <h2>SELECIONE UM IDIOMA</h2>
+            <button id="espanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
+            <button id="ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
+            <button id="outrosidi"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
             <button id="espanhol" type="submit" name="espanhol" title="Epanhol"><img class="esp" src="./img/caracteristicas/espanhol.svg" /></button>
             <button id="ingles" type="submit" name="ingles" title="Ingles"><img class="ing" src="./img/caracteristicas/ingles.svg" /></button>
             <button id="outrosidi" type="submit" name="outrosidi" title="Outros"><img class="outri" src="./img/caracteristicas/outrosidi.svg" /></button>
@@ -93,6 +108,24 @@ endif;
           
           <div class="pont">
             <h2>SELECIONE UM PONTO TURÍSTICO</h2>
+            <button id="cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
+            <button id="floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
+            <button id="geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>
+            <button id="historico"><img class="hist" src="./img/caracteristicas/museu.svg" /></button>
+            <button id="montanha"><img class="mont" src="./img/caracteristicas/montanha.svg" /></button>
+            <button id="praia"><img class="pra" src="./img/caracteristicas/praia.svg" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <img id="kombi" src="./img/kombi.gif" alt="">
+        <h1>Países</h1>
+        <h1>selecionados</h1>
+        <a id="iniciar" href="telas.html">Iniciar</a>
+        <button id="fechar">Escolher novamente</button>
+      </div>
             <button id="cidade" type="submit" name="cidade" title="Cidade"><img class="city" src="./img/caracteristicas/city.svg" /></button>
             <button id="floresta" type="submit" name="floresta" title="Floresta"><img class="flores" src="./img/caracteristicas/floresta.svg" /></button>
             <button id="geleira" type="submit" name="geleira" title="Geleira"><img class="gel" src="./img/caracteristicas/iceberg.svg" /></button>

@@ -1,5 +1,16 @@
+<<<<<<< HEAD
+/* selecionar opções menu */
+const links = document.querySelectorAll('nav ul li a')
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    nav.classList.remove('show')
+  })
+}
+=======
 const icon = document.getElementById('icon')
 let nav = document.getElementById('nav')
+>>>>>>> 58bf6a12912e496105bcdf1ea9c7df5e96dbb494
 
 icon.addEventListener('click', () => {
   if (nav.style.left === '0rem') {
@@ -305,6 +316,24 @@ open19.addEventListener('click', () => {
 open20.addEventListener('click', () => {
   modal_container.classList.add('show')
 
+<<<<<<< HEAD
+
+
+
+
+
+const icon = document.getElementById('icon');
+let nav = document.getElementById ('nav');
+
+icon.addEventListener('click', () => {
+    if(nav.style.left === '0rem') {
+        nav.style.left = '-21rem';
+    }
+    else {
+        nav.style.left = '0rem';
+    }
+=======
   var escolha = 15
   document.getElementById('escolha').value = escolha
+>>>>>>> 58bf6a12912e496105bcdf1ea9c7df5e96dbb494
 })
