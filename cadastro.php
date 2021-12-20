@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -27,24 +29,43 @@
         <div class="f">
             <div class="formu">
                 <img class="logo" src="./img/logo.svg" />
-                <form action="/pagina-processa-dados-do-form" method="post">
-                    <div>
-                        <input type="text" placeholder="Nome:" id="nome" />
+                <!---<form method="get" action="proccad.php">
+                     <div>
+                        <input type="text" placeholder="Nome:" id="nome" name="nome" />
                     </div> 
                     <div>
-                        <input type="text" placeholder="E-mail:" id="email" /> 
+                        <input type="text" placeholder="E-mail:" id="email" name="email" /> 
                     </div>
                     <div class="senhadiv">
-                        <input type="password" placeholder="Senha:" id="senha" />
+                        <input type="password" placeholder="Senha:" id="senha" name="senha" />
                         <img id="os" src="./img/olhoechado.svg">
                     </div>
                     <div class="senhadiv">
-                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" />
+                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" name="confsenha"/>
                        <img id="o" src="./img/olhoechado.svg">
                     </div>
-                    <input type="submit" value="CADASTRAR" id="entrar" />
+                    <input type="submit" id="entrar" value="CADASTRAR">
+
                     <h4><a href="index.html">Voltar</a></h4>
+                </form>------->
+
+                <form method="get" action="proccad.php">
+                    
+                        <input type="text" placeholder="Nome:" id="nome" name="nome" required/>
+                    
+                        <input type="text" placeholder="E-mail:" id="email" name="email" required/> 
+                  
+                        <input type="password" placeholder="Senha:" id="senha" name="senha" required/>
+                       
+                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" name="confsenha" required/>
+                        
+                    <input type="submit" id="entrar" value="CADASTRAR">
+
+                    <h4><a href="index.html">Voltar</a></h4>
+
                 </form>
+                
+                
             </div>
         </div>
     </div>

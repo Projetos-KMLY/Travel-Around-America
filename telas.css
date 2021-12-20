@@ -1,139 +1,271 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-   background-image: url(./img/paises-background/Brasil.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-   background-position: center; 
-  min-width: 100vw;
-  min-height: 100vh; 
-
-  /* background: url(./img/paises-background/brasil3.png) no-repeat center center fixed; 
+/* background: url(./img/paises-background/brasil3.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
-}
+
 /* ======= ROOT ======= */
 :root {
-    
+  /* colors */
+  --base-color: #1195a8;
+  --base-color-second: #0c7c8d;
+  --color-elements: #fcf9c1;
+  --color-details: #c1fcdb;
+  --clean: #ffffff;
+  --title-color: #103d50;
+  --text-color: #384b53;
 
-    /* colors */
-    --base-color: #1195a8;
-    --base-color-second: #0c7c8d;
-    --color-elements: #fcf9c1;
-    --color-details: #c1fcdb;
-    --clean: #ffffff;
-    --title-color: #103d50;
-    --text-color: #384b53;
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --font: 'Poppins', sans-serif;
+  --logo-font: 'Poppins', sans-serif;
 
-    /* fonts */
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
-    --font: 'Poppins', sans-serif;
-    --logo-font: 'Poppins', sans-serif;
+  --duration: 0.5s;
 }
 
 /* ======= HEADER ======= */
 
-
 /*======= LOGO =======*/
 nav .logo img {
-    width: 10rem;
-    float: left;
-    height: 2.4rem;
-    margin-left: -4rem;
+  width: 10rem;
+  float: left;
+  height: 2.4rem;
+  margin-left: -4rem;
 }
 
 /*======= NAVEGAÇÂO =======*/
 
-
-/* ======= CONTEUDO ======= */
-
 /*======= MODAL =======*/
+body {
+  background-image: url(./img/paises-background/Brasil.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100vw;
+  min-height: 100vh;
 
-  .modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-items: center;
-  }  
-  
-  .modal {
-    background-color: white;
-    width: 28rem;
-    max-width: 100%;
-    border-radius: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
 
-  .opi {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 0 0;
-  }
+.products {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+}
 
-  .pular {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 2rem 0;
-  }
-  
-  #proximo {
-    border: none;
-    background: none;
-    font-family: Poppins;
-    font-weight: normal;
-    font-size: 1rem;
-    padding: 0;
-    margin: 0 1rem 0 1rem;
-  }
-  
-  .core, .like {
-    width: 4rem;
-  }
-  
-  #coracao, #dislike {
-    width: 3.5rem;
-    height: 3.5rem;
-    border: none;
-    background-color: white;
-    border-radius: 60rem;
-    cursor: pointer;
-    margin: 0 1rem 0 0;
-    cursor: pointer;
-  }
-  
-  .dire, .esquer {
-    width: 1rem;
-  }
-  
-  #direita, #esquerda {
-    width: 2.5rem;
-    height: 2.5rem;
-    border: none;
-    background-color: white;
-    border-radius: 60rem;
-    cursor: pointer;
-    cursor: pointer;
-  }
+.product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
+.product.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imgcarac {
+  border-radius: 6%;
+}
+.tutorial {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Poppins';
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Poppins';
+  line-height: 52, 5px;
+  color: black;
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.thumbnail {
+  margin: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 -12px -12px;
+}
+
+[ripple] {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+[ripple] .ripple {
+  position: absolute;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: ripple 2s;
+  animation: ripple 2s;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(20);
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(20);
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+.card {
+  background: #ffffff;
+  width: 25rem;
+  margin: 100px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-sizing: border-box;
+  padding: 48px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.opi {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.core,
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core:hover,
+.like:hover {
+  border-radius: 50%;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.061), 0 6px 6px rgba(0, 0, 0, 0.055);
+}
+
+.pular {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+
+#proximo {
+  border: none;
+  background: none;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0 1rem 0 1rem;
+}
+
+.core,
+.like {
+  width: 4rem;
+}
+
+#coracao,
+#dislike {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  background-color: white;
+  border-radius: 60rem;
+  cursor: pointer;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.dire,
+.esquer {
+  width: 1rem;
+}
+
+#next,
+#prev {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}

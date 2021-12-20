@@ -74,6 +74,64 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
+<<<<<<< HEAD
+=======
+/*======= LOGO =======*/
+.ah {
+  font-family: Poppins;
+  text-align: left;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.ah:hover {
+  background-color: var(--color-details);
+  transition: 0.5s;
+}
+
+.logo {
+  width: 10rem;
+  margin-left: 8rem;
+}
+
+ul {
+  margin-top: 2.3rem;
+  list-style: none;
+}
+
+label img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  margin-top: -0.9rem;
+  margin-left: 2rem;
+  width: 1.8rem;
+
+  z-index: 1;
+  cursor: pointer;
+}
+
+#icon {
+  display: flex;
+}
+
+#nav {
+  background-color: var(--base-color);
+  position: absolute;
+  width: 21rem;
+  left: -21rem;
+  text-align: left;
+  transition: 0.5s;
+  height: 92.5vh;
+  margin: 38rem 0 0 0;
+}
+
+>>>>>>> 58bf6a12912e496105bcdf1ea9c7df5e96dbb494
 /*======= PRINCIPAL =======*/
 .container {
   display: flex;
@@ -396,7 +454,6 @@ body {
 
   transform: rotate(-0.01deg);
 }
-
 /*==========RESPONSIVO==========*/
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
