@@ -1,13 +1,3 @@
-/*  abrir menu lateral */
-const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
-
-for (const element of toggle) {
-  element.addEventListener('click', function () {
-    nav.classList.toggle('show')
-  })
-}
-
 /* selecionar opções menu */
 const links = document.querySelectorAll('nav ul li a')
 
@@ -257,4 +247,19 @@ open20.addEventListener('click', () => {
   modal_container.classList.add('show')
 })
 
-/* botoes */
+
+
+
+
+
+const icon = document.getElementById('icon');
+let nav = document.getElementById ('nav');
+
+icon.addEventListener('click', () => {
+    if(nav.style.left === '0rem') {
+        nav.style.left = '-21rem';
+    }
+    else {
+        nav.style.left = '0rem';
+    }
+})
