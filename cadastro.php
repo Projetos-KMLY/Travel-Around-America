@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -49,28 +51,21 @@
 
                 <form method="get" action="proccad.php">
                     
-                       
-
-                        
-                        <input type="text" placeholder="Nome:" id="nome" name="nome" />
+                        <input type="text" placeholder="Nome:" id="nome" name="nome" required/>
                     
-                        <input type="text" placeholder="E-mail:" id="email" name="email" /> 
+                        <input type="text" placeholder="E-mail:" id="email" name="email" required/> 
                   
-                 
-                        <input type="password" placeholder="Senha:" id="senha" name="senha" />
-                   
-                    
-                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" name="confsenha"/>
-                        <div class="senhadiv">
+                        <input type="password" placeholder="Senha:" id="senha" name="senha" required/>
+                       
+                        <input type="password" placeholder="Confirmar Senha:" id="confsenha" name="confsenha" required/>
                         
-                       <img id="o" src="./img/olhoechado.svg">
-                    </div>
-                    
-                      
                     <input type="submit" id="entrar" value="CADASTRAR">
 
                     <h4><a href="index.html">Voltar</a></h4>
+
                 </form>
+                
+                
             </div>
         </div>
     </div>

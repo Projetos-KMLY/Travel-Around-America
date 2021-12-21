@@ -63,18 +63,21 @@ body {
 #header {
   border-bottom: 1px solid #0d8ea1;
   display: flex;
-  height: 4rem;
+  height: 10vh;
   align-items: center;
+  justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: var(--base-color);
-  width: 100%;
+  width: 100vw;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
+<<<<<<< HEAD
+=======
 /*======= LOGO =======*/
-.ah{
+.ah {
   font-family: Poppins;
   text-align: left;
   padding: 1.5rem 2rem;
@@ -85,7 +88,7 @@ body {
   color: white;
 }
 
-.ah:hover{
+.ah:hover {
   background-color: var(--color-details);
   transition: 0.5s;
 }
@@ -100,7 +103,7 @@ ul {
   list-style: none;
 }
 
-label img{
+label img {
   position: absolute;
   display: flex;
   align-items: center;
@@ -108,7 +111,6 @@ label img{
   margin-top: -0.9rem;
   margin-left: 2rem;
   width: 1.8rem;
-
 
   z-index: 1;
   cursor: pointer;
@@ -129,6 +131,7 @@ label img{
   margin: 38rem 0 0 0;
 }
 
+>>>>>>> 58bf6a12912e496105bcdf1ea9c7df5e96dbb494
 /*======= PRINCIPAL =======*/
 .container {
   display: flex;
@@ -466,13 +469,6 @@ label img{
       #4ec4d6
     );
   }
-  nav .menu-lateral {
-    left: 8%;
-  }
-  nav .logo img {
-    margin-right: 0.5rem;
-    float: right;
-  }
 
   .america {
     width: 25.5rem;
@@ -523,13 +519,6 @@ label img{
     );
   }
 
-  nav .menu-lateral {
-    left: 8%;
-  }
-  nav .logo img {
-    margin-right: 0.5rem;
-    float: right;
-  }
   .filtro {
     margin: 0;
   }
@@ -557,13 +546,6 @@ label img{
     );
   }
 
-  nav .menu-lateral {
-    left: 8%;
-  }
-  nav .logo img {
-    margin-right: 0.5rem;
-    float: right;
-  }
   .filtro h1 {
     font-size: 1.5rem;
   }
@@ -588,6 +570,80 @@ label img{
     margin-bottom: 2rem;
   }
 }
+
+
+
+
+
+.ah{
+  font-family: Poppins;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.ah:hover{
+  background-color: var(--mint-green);
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+  margin-top: 2.3rem;
+}
+
+label img{
+  position: absolute;
+  display: block;
+  align-items: center;
+
+  margin-top: -0.7rem;
+  margin-left: 3rem;
+  width: 1.5rem;
+
+  color: var(--mint-green);
+
+  z-index: 1;
+  cursor: pointer;
+}
+
+#icon {
+  display: flex;
+}
+
+.logo{
+  padding-top: 0.5rem;
+  width: 10rem;
+  margin-right: 3rem;
+}
+
+#nav{
+  background-color: var(--base-color);
+  position: absolute;
+  width: 21rem;
+  left: -21rem;
+  transition: 0.5s;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#pessoa {
+  width: 6rem;
+  margin: 4rem 5rem 2rem 5rem;
+}
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
   .filtro h1 {

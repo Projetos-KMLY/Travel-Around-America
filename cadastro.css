@@ -1,100 +1,266 @@
 /* RESET */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom, #4BAAB8, #9ED3DC, #FFF);
-    background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #4baab8, #9ed3dc, #fff);
+  background-attachment: fixed;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
-    width: 15rem;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .f {
-    display: flex;
-    justify-content: center;
-    width: 38vw;
-    float: left;
+  display: flex;
+  justify-content: center;
+  width: 38vw;
+  float: left;
 }
 
 form {
-    padding: 1rem 4rem 2rem 4rem;
+  padding: 1rem 4rem 2rem 4rem;
 }
 
 .formu {
-    padding: 3rem 0 3rem 0;
-    background-color: #F5F5F5;
-    border-radius: 1rem;
-    height: 32rem;
-    width: 25rem;
-    color: #555555;
-    font-size: 0.8rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 3rem 0 3rem 0;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  height: 32rem;
+  width: 25rem;
+  color: #555555;
+  font-size: 0.8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 div.img .login {
-    width: 48vw;
-    height: 100vh;
-    display: flex;
+  width: 48vw;
+  height: 100vh;
+  display: flex;
 }
 
 .container {
-    display: flex;
-    align-content: center;
-    margin: 0 5rem 0 5rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-content: center;
+  margin: 0 5rem 0 5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #nome {
-    font-family: Poppins;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-    display: block;
-    width: 100%;
-    height: 45px;
-    background: transparent;
-    padding: 0 5px;
-    border: none;
-    border-bottom: 2px solid #adadad;
-    margin-bottom: 37px;
-    outline: none;
+  font-family: Poppins;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+  outline: none;
 }
 
 #email {
-    font-family: Poppins;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-    display: block;
-    width: 100%;
-    height: 45px;
-    background: transparent;
-    padding: 0 5px;
-    border: none;
-    border-bottom: 2px solid #adadad;
-    margin-bottom: 37px;
-    outline: none;
+  font-family: Poppins;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+  outline: none;
 }
 
 #senha {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+  border: none;
+  margin-bottom: 37px;
+  border-bottom: 2px solid #adadad;
+  outline: none;
+}
+
+#confsenha {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 2px solid #adadad;
+  outline: none;
+}
+
+#o {
+  width: 1.2rem;
+  margin-left: -27px;
+  background-color: transparent;
+  border: none;
+  transition: 0.2s;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#os {
+  width: 1.2rem;
+  margin-left: -27px;
+  background-color: transparent;
+  border: none;
+  transition: 0.2s;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -2.2rem;
+}
+
+.errorInput {
+  border-bottom: 2px solid rgb(207, 53, 53) !important;
+}
+
+.senhadiv {
+  display: flex;
+}
+
+#entrar {
+  font-family: Poppins;
+  font-size: 1rem;
+  padding: 0.3rem;
+  color: white;
+  background-color: #13a2cf;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 7rem;
+  margin: 1.9rem 5rem 0.5rem 5rem;
+  cursor: pointer;
+}
+
+a {
+  font-family: Poppins;
+  font-size: 0.7rem;
+  margin: 0 7.5rem 0 7.5rem;
+  color: #13a2cf;
+  text-decoration: none;
+}
+
+footer {
+  font-family: Poppins;
+  font-size: 0.8rem;
+  color: #1195a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1.3rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  div.img .login {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+  }
+
+  ::placeholder {
+    color: #797878;
+  }
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .formu {
+    background: none;
+    height: 32rem;
+    width: 25rem;
+    font-size: 0.8rem;
+    padding: 2rem 0 2rem 0;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .f {
+    display: flex;
+    justify-content: center;
+    width: 38vw;
+  }
+
+  form {
+    padding: 1rem 0rem 2rem 0rem;
+  }
+
+  #nome {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px solid #797878;
+    margin-bottom: 37px;
+    outline: none;
+  }
+
+  #email {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 2px solid #797878;
+    margin-bottom: 37px;
+    outline: none;
+  }
+
+  #senha {
     font-family: Poppins;
     font-size: 15px;
     color: #555555;
@@ -106,11 +272,11 @@ div.img .login {
     padding: 0 5px;
     border: none;
     margin-bottom: 37px;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #797878;
     outline: none;
-}
+  }
 
-#confsenha {
+  #confsenha {
     font-family: Poppins;
     font-size: 15px;
     color: #555555;
@@ -121,285 +287,111 @@ div.img .login {
     background: transparent;
     padding: 0 5px;
     border: none;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #797878;
     outline: none;
-}
-
-#o {
-    width: 1.2rem;
-    margin-left: -27px;
-    background-color: transparent;
-    border: none;
-    transition: .2s;
-    opacity: .5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
   }
 
-  #os {
-    width: 1.2rem;
-    margin-left: -27px;
-    background-color: transparent;
-    border: none;
-    transition: .2s;
-    opacity: .5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: -2.2rem;
-  }
-
-  .errorInput {
-    border-bottom: 2px solid rgb(207, 53, 53) !important;
-}
-
-.senhadiv {
-    display: flex; 
-}
-
-#entrar {
+  #entrar {
     font-family: Poppins;
     font-size: 1rem;
     padding: 0.3rem;
     color: white;
-    background-color: #13A2CF;
+    background-color: #13a2cf;
     border: none;
     border-radius: 0.3rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 7rem;
     margin: 1.9rem 5rem 0.5rem 5rem;
     cursor: pointer;
-}
-
-a {
-    font-family: Poppins;
-    font-size: 0.7rem;
-    margin: 0 7.5rem 0 7.5rem;
-    color: #13A2CF;
-    text-decoration: none;
-}
-
-footer {
-    font-family: Poppins;
-    font-size: 0.8rem;
-    color: #1195A8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -1.3rem;
-
-}
-
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
-    div.img .login {
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-    }
-
-    ::placeholder {
-        color: #797878;
-    }
-
-    .container {
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .formu {
-        background: none;
-        height: 32rem;
-        width: 25rem;
-        font-size: 0.8rem; 
-        padding: 2rem 0 2rem 0;
-        box-shadow: 0px 0px 0px 0px;
-    }
-
-    .f {
-        display: flex;
-        justify-content: center;
-        width: 38vw;
-    }
-
-    form {
-        padding: 1rem 0rem 2rem 0rem;
-    }
-
-    #nome {
-        font-family: Poppins;
-        font-size: 15px;
-        color: #555555;
-        line-height: 1.2;
-        display: block;
-        width: 100%;
-        height: 45px;
-        background: transparent;
-        padding: 0 5px;
-        border: none;
-        border-bottom: 2px solid #797878;
-        margin-bottom: 37px;
-        outline: none;
-    }
-    
-    #email {
-        font-family: Poppins;
-        font-size: 15px;
-        color: #555555;
-        line-height: 1.2;
-        display: block;
-        width: 100%;
-        height: 45px;
-        background: transparent;
-        padding: 0 5px;
-        border: none;
-        border-bottom: 2px solid #797878;
-        margin-bottom: 37px;
-        outline: none;
-    }
-    
-    #senha {
-        font-family: Poppins;
-        font-size: 15px;
-        color: #555555;
-        line-height: 1.2;
-        display: block;
-        width: 100%;
-        height: 45px;
-        background: transparent;
-        padding: 0 5px;
-        border: none;
-        margin-bottom: 37px;
-        border-bottom: 2px solid #797878;
-        outline: none;
-    }
-    
-    #confsenha {
-        font-family: Poppins;
-        font-size: 15px;
-        color: #555555;
-        line-height: 1.2;
-        display: block;
-        width: 100%;
-        height: 45px;
-        background: transparent;
-        padding: 0 5px;
-        border: none;
-        border-bottom: 2px solid #797878;
-        outline: none;
-    }
-    
-    #entrar {
-        font-family: Poppins;
-        font-size: 1rem;
-        padding: 0.3rem;
-        color: white;
-        background-color: #13A2CF;
-        border: none;
-        border-radius: 0.3rem;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 7rem;
-        margin: 1.9rem 5rem 0.5rem 5rem;
-        cursor: pointer;
-    }
+  }
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 1600px) {
-    
-    .formu {
-        width: 28rem;
-        height: 35rem;
-    }
+  .formu {
+    width: 28rem;
+    height: 35rem;
+  }
 
-    #entrar {
-        margin: 3rem 6.5rem 0.5rem 6.5rem;
-    }
+  #entrar {
+    margin: 3rem 6.5rem 0.5rem 6.5rem;
+  }
 
-    a {
-        margin: 0 9rem 0 9rem;
-    }
+  a {
+    margin: 0 9rem 0 9rem;
+  }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
-    
-    .formu {
-        width: 30rem;
-        height: 37rem;
-    }
+  .formu {
+    width: 30rem;
+    height: 37rem;
+  }
 
-    #entrar {
-        margin: 4rem 7.5rem 0.8rem 7.5rem;
-    }
+  #entrar {
+    margin: 4rem 7.5rem 0.8rem 7.5rem;
+  }
 
-    a {
-        margin: 0 10rem 0 10rem;
-    }
+  a {
+    margin: 0 10rem 0 10rem;
+  }
 }
 
 @media only screen and (min-width: 1700px) and (max-width: 1800px) {
-    
-    .formu {
-        width: 32rem;
-        height: 39rem;
-    }
+  .formu {
+    width: 32rem;
+    height: 39rem;
+  }
 
-    #entrar {
-        margin: 6rem 8.5rem 0.8rem 8.5rem;
-    }
+  #entrar {
+    margin: 6rem 8.5rem 0.8rem 8.5rem;
+  }
 
-    a {
-        margin: 0 11rem 0 11rem;
-    }
+  a {
+    margin: 0 11rem 0 11rem;
+  }
 }
 
 @media only screen and (min-width: 1800px) and (max-width: 1900px) {
-    
-    .formu {
-        width: 34rem;
-        height: 41rem;
-    }
+  .formu {
+    width: 34rem;
+    height: 41rem;
+  }
 
-    #entrar {
-        margin: 8rem 9.5rem 0.8rem 9.5rem;
-    }
+  #entrar {
+    margin: 8rem 9.5rem 0.8rem 9.5rem;
+  }
 
-    a {
-        margin: 0 12rem 0 12rem;
-    }
+  a {
+    margin: 0 12rem 0 12rem;
+  }
 }
 
 @media only screen and (min-width: 1900px) and (max-width: 2000px) {
-    
-    .formu {
-        width: 36rem;
-        height: 43rem;
-    }
+  .formu {
+    width: 36rem;
+    height: 43rem;
+  }
 
-    #entrar {
-        margin: 10rem 10.5rem 0.8rem 10.5rem;
-    }
+  #entrar {
+    margin: 10rem 10.5rem 0.8rem 10.5rem;
+  }
 
-    a {
-        margin: 0 13rem 0 13rem;
-    }
+  a {
+    margin: 0 13rem 0 13rem;
+  }
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 2100px) {
-    
-    .formu {
-        width: 36rem;
-        height: 43rem;
-    }
+  .formu {
+    width: 36rem;
+    height: 43rem;
+  }
 
-    #entrar {
-        margin: 10rem 10.5rem 0.8rem 10.5rem;
-    }
+  #entrar {
+    margin: 10rem 10.5rem 0.8rem 10.5rem;
+  }
 
-    a {
-        margin: 0 13rem 0 13rem;
-    }
+  a {
+    margin: 0 13rem 0 13rem;
+  }
 }
-
